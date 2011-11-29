@@ -1,0 +1,147 @@
+
+@char@charset "utf-8"; /* CSS Document */
+html, body { height:100%; }
+body{ margin: 0; width: 960px; padding: 0; }
+a { color: #c00; }
+
+
+@font-face { font-family: Oswald; src: url('../fonts/oswald-webfont.eot?') format('eot'), url('../fonts/oswald-webfont.woff') format('woff'), url('../fonts/oswald-webfont.ttf')  format('truetype'), url('../fonts/oswald-webfont.svg#svgFontName') format('svg'); } @font-face { font-family: Arvo; src: url('../fonts/arvo-regular-webfont.eot?') format('eot'), url('../fonts/arvo-regular-webfont.woff') format('woff'), url('../fonts/arvo-regular-webfont.ttf')  format('truetype'), url('../fonts/arvo-regular-webfont.svg#svgFontName') format('svg'); }
+menu, menu li { float: left; list-style-type: none; padding: 0; margin: 0; } 
+.pad-40 { padding-left: 40px; } 
+#header menu li a { color: #bcc; display: block; text-decoration: none; word-wrap: break-word; width: 110px; height: 90px; padding: 10px 0 0 10px; letter-spacing: 1px; font: 400 34px/34px Oswald, "Arial Narrow", sans-serif; text-transform: uppercase; float: left; border-right: 1px solid #ccc; } 
+#header .small { font: 400 20px/20px Oswald, "Arial Narrow", sans-serif; display: block; height: 20px; } 
+#header menu li a.select { color: #444; background: #eee; }
+
+p { margin: 0 0 16px 0; font: 14px/20px Arvo, Helvetica, Arial, sans-serif; color: #000; }
+p, ul{ font-family: Arvo, Helvetica, Arial, sans-serif; font-size-adjust:0.488; }
+
+img{ border: 0; }
+h1 { font: normal 48px/42px Arvo, Georgia, serif; text-transform: uppercase; }
+h2{ //font-family: Georgia, sans-serif; font: 400 100px/90px Oswald, "Arial Narrow", serif; //font-size-adjust:0.531; //re-calculate adjustment font-style:normal; //opacity: .6; padding: 0; margin: 0 0 20px; letter-spacing: -4px; text-transform: uppercase; color: #000; }
+h3 { font: 40px/36px Arvo, Georgia, serif; letter-spacing: -.03em; padding: 0; margin: 0 0 20px; opacity: .7; }
+
+.float-left{ float: left; margin: 0 0 0 40px; }
+.float-right{ float: left; margin: 0 0 0 240px; }
+
+/*.center{ font-size: 2.5em; padding: 80px 0; text-align: center; }*/
+
+#nav{ list-style: none; position: fixed; right: 20px; }
+#nav li{ margin: 0 0 15px 0; }
+#header, #intro, #second{ width: 100%; }
+#header{ background: #fff; height: 100px; position: fixed; clear: both; z-index: 999; -moz-box-shadow: inset 0 0 12px #ccc; -webkit-box-shadow: inset 0 0 12px #ccc; box-shadow: inset 0 0x 12px #ccc; }
+
+#wrapper { width: 768px; height: auto; overflow: hidden; }
+
+#intro{
+	background: url(../images/m-firstBG.jpg) no-repeat;
+	height: 1000px;
+	margin: 0;
+	padding: 100px 0 0;
+}
+
+#second {
+	background: url(../images/m-secondBG.gif) -100px 0 no-repeat;
+	height: 2000px;
+	margin: 0;
+	padding: 0;
+}
+
+#third {
+	background: url(../images/m-thirdBG.jpg) no-repeat;
+	height: 768px;
+	margin: 0;
+	padding: 0;
+}
+
+#third h3 { padding-top: 100px; color: #fff; }
+#third p { color: #fff; }
+
+#fourth {
+	background: url(../images/m-fourthBG.jpg) no-repeat;
+	height: 768px;
+	margin: 0;
+	padding: 0;
+}
+
+#fifth {
+	background: url(../images/m-fifthBG.jpg) -180px 0 no-repeat;
+	height: 768px;
+	margin: 0;
+	padding: 0;
+}
+.story {
+	margin: 0 auto;
+	min-width: 980px;
+	width: 980px;
+}
+
+.story .float-left, .story .float-right {
+	padding: 80px 0 0 0;
+	position: relative;
+	width: 500px;	
+}
+
+#team #intro {
+	background: url(../images/m-bryceBG.jpg) -250px 0 no-repeat;
+	height: 668px;
+	margin: 0;
+	padding: 100px 0 0 0;
+	border-bottom: 1px solid #fff;
+}
+
+#team #intro .story { width: 400px; }
+#team #intro h2 { font-size: 100px; opacity: .8; color: #ddd; text-shadow: 1px 1px 0 #000; }
+#team #intro h3, #team #intro p { padding: 10px 20px; margin: 0; background-color: #000; opacity: .6; color: #fff; }
+
+#team #second {
+	background: url(../images/m-markBG.jpg) center 0 no-repeat;
+	height: 768px;
+	margin: 0;
+	padding: 0;
+	border-bottom: 1px solid #fff;
+}
+
+#team #second h3, #team #second p { padding: 10px 20px; margin: 0; background-color: #000; opacity: .6; color: #fff; }
+
+#team #third {
+	background: url(../images/m-timBG.jpg) -200px 0 no-repeat;
+	height: 768px;
+	margin: 0;
+	padding: 0;
+}
+
+#team #third h3, #team #third p { padding: 10px 20px; margin: 0; background-color: #000; opacity: .6; color: #fff; }
+
+#portfolio { background: url(../images/m-portfolioBG.jpg) no-repeat; height: 1024px; }
+#portfolio #content {  padding: 0 20px; height: auto; overflow: hidden;  }
+#portfolio #content h2 { margin: 30px 0 0 30px; color: #000; opacity: .6; filter: alpha(opacity=60); padding-top:100px; }
+#portfolio #content ul { padding: 0 0 150px 30px; height: auto; overflow: hidden; }
+#portfolio #content ul, #portfolio #content ul li { float: left; list-style-type: none; }
+#portfolio #content li { cursor: pointer; margin: 2px; ; padding: 10px; width: 125px; height: 80px; opacity: .6;filter: alpha(opacity=60); background: #fff;     
+    -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);  
+    -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);  
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1); }
+#portfolio #content li.inactive { background-color: #ccc; }
+
+#portfolio #content h3 { font: 400 14px/14px Oswald, "Arial Narrow", serif; margin-bottom: 12px; letter-spacing: .02em; text-transform: uppercase; color: #000; }
+#portfolio #content li p { font: 11px/14px Arvo, Helvetica, Arial, sans-serif; padding: 0; margin-bottom: 6px; color: #000; }
+#portfolio #content li p.hidden { display: none; }
+#portfolio #content li.active { width:423px; height:184px;}
+#portfolio #content li.active p.hidden { display:block; }
+
+#not #intro { background: url(../images/oatv-logo.png) 550px 1020px no-repeat; height: 1200px; }
+#not #intro h2 { margin-bottom: 30px; }
+#not #intro p { margin-bottom: 30px; }
+
+
+#footer { border: 1px solid #eee; height: 120px; background: #fff url(../images/oatv-logo.png) 0 12px no-repeat; -webkit-box-shadow: inset 0 0 12px #ccc; }
+#footer p { font: 11px/14px Arial, sans-serif; color: #444; padding: 36px 0 0 200px; }
+#footer strong { color: #000; }
+
+
+
+
+
+
+
+
