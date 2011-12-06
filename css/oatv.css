@@ -27,7 +27,18 @@ body{
 a { color: #c00; }
 
 
+.center { text-align: center; margin: 0 auto; }
+.logo { margin-top: 0; }
+.navlink { margin-top: 150px; font: 16px/20px "Gill Sans", Futura, Helvetica, Arial, sans-serif; letter-spacing: .9em; color: #333; text-transform: uppercase; text-shadow: 1px 1px 0 #fff; }
+.navlink a { color: #222; text-decoration: none; }
+.navlink a:hover { color: #c00; }
+.leftlink { padding: 0 40px 0 70px; border-right: 1px dotted #666; }
+.rightlink { padding-left: 40px; }
+#wrapper { width: 960px; margin: 0 auto; padding-top: 60px; position: relative; text-align: left; }
+
+
 @font-face { font-family: Oswald; src: url('../fonts/oswald-webfont.eot?') format('eot'), url('../fonts/oswald-webfont.woff') format('woff'), url('../fonts/oswald-webfont.ttf')  format('truetype'), url('../fonts/oswald-webfont.svg#svgFontName') format('svg'); }
+@font-face { font-family: Arvo; src: url('../fonts/arvo-regular-webfont.eot?') format('eot'), url('../fonts/arvo-regular-webfont.woff') format('woff'), url('../fonts/arvo-regular-webfont.ttf')  format('truetype'), url('../fonts/arvo-regular-webfont.svg#svgFontName') format('svg'); }
 
 menu, menu li { float: left; list-style-type: none; padding: 0; margin: 0; }
 .pad-40 { padding-left: 40px; }
@@ -68,8 +79,7 @@ h2{
 	margin: 0 0 20px;
 	letter-spacing: -4px; 
 	text-transform: uppercase;
-	color: #000;
-	
+	color: #000;	
 }
 
 
@@ -116,7 +126,6 @@ h3 { font: 40px/36px Arvo, Georgia, serif; letter-spacing: -.03em; padding: 0; m
 }
 
 #intro{
-	background:url(../images/firstBG.jpg) 50% 0 no-repeat fixed;
 	height: 880px;
 	margin: 0;
 	padding: 100px 0 0;
@@ -126,7 +135,6 @@ h3 { font: 40px/36px Arvo, Georgia, serif; letter-spacing: -.03em; padding: 0; m
 
 
 #second{
-	background: url(../images/secondBG.jpg) 50% 0 no-repeat fixed;
 	height: 1300px;
 	margin: 0 auto;
 	overflow: hidden;
@@ -137,7 +145,6 @@ h3 { font: 40px/36px Arvo, Georgia, serif; letter-spacing: -.03em; padding: 0; m
 #second h3 { padding-top: 80px; }
 
 #second .bg {
-	background: url(../images/trainers.png) 50% 0 no-repeat fixed;
 	height: 900px;
 	margin: 0 auto;
 	padding: 0;
@@ -148,7 +155,6 @@ h3 { font: 40px/36px Arvo, Georgia, serif; letter-spacing: -.03em; padding: 0; m
 
 
 #third {
-	background: url(../images/thirdBG.jpg) 50% 0 no-repeat fixed;
 	color: #fff;
 	height: 1000px;
 	padding: 100px 0 0 0;	
@@ -157,16 +163,15 @@ h3 { font: 40px/36px Arvo, Georgia, serif; letter-spacing: -.03em; padding: 0; m
 #third p { color: #fff; }
 
 #fourth {
-	background: url(../images/fourthBG.jpg) 50% 0 no-repeat fixed;
 	height: 900px;
 	padding: 0;
 }
 
 #fourth h3, #fourth p, #fourth ul li { color: #fff; }
-#fourth .robot { background: url(../images/robot.png) 50% 0 no-repeat fixed; height: 1000px; margin: 0 auto; padding: 0; position: absolute; width: 1000px; z-index: 200; }
+#fourth .robot { background: url(../img/robot.png) 50% 0 no-repeat fixed; height: 1000px; margin: 0 auto; padding: 0; position: absolute; width: 1000px; z-index: 200; }
 #fourth h3 { margin-top: 150px; }
 
-#fifth { margin: 0 auto; background: url(../images/enthusiasts.gif) 50% 0 no-repeat fixed; height: 900px; }
+#fifth { margin: 0 auto; background: url(../img/enthusiasts.jpg) 50% 0 no-repeat fixed; height: 900px; }
 #fifth h3 { margin-top: 100px; color: #fff; }
 #fifth p { color: #fff; }
 
@@ -190,37 +195,38 @@ h3 { font: 40px/36px Arvo, Georgia, serif; letter-spacing: -.03em; padding: 0; m
 #who p strong { font-weight: bold; text-transform: uppercase; }
 
 #who .story .float-left, #who .story .float-right, #team .story .float-left,  #team .story .float-right { width: 450px; padding-top: 40px; }
-#who #intro { background: url(../images/stage.gif) 50% 0 no-repeat fixed; height: 1000px; }
+#who #intro { background: url(../img/stage.jpg) 50% 0 no-repeat fixed; height: 1000px; }
 #who #intro h3 { margin: 20px 0; color: #000; }
 #who #intro p { color: #000; }
 
-#who #second { background: url(../images/themes.jpg) 50% 0 no-repeat fixed; height: 2200px; }
-#who .jumper { background: url(../images/jumper.png) 50% 0 no-repeat fixed; height: 2200px; margin: 0 auto; padding: 0; position: absolute; width: 900px; z-index: 200; }
-#who #third { background: url(../images/longterm.gif) 50% 0 no-repeat fixed; height: 1000px; }
+#who #second { background: url(../img/themes.jpg) 50% 0 no-repeat fixed; height: 2200px; }
+#who .jumper { background: url(../img/jumper.png) 50% 0 no-repeat fixed; height: 2200px; margin: 0 auto; padding: 0; position: absolute; width: 900px; z-index: 200; }
+#who #third { background: url(../img/longterm.jpg) 50% 0 no-repeat fixed; height: 1000px; }
 #who #third h3 { margin-top: 200px; }
 #who #third p { color: #fff; }
-#who #fourth { background: url(../images/network.gif) 50% 0 no-repeat fixed; height: 1100px; }
+#who #fourth { background: url(../img/network.gif) 50% 0 no-repeat fixed; height: 1100px; }
 #who #fourth h3 { margin-top: 320px; color: #000; }
 #who #fourth p { color: #000; }
-#who #fifth { background: url(../images/enthusiasts.gif) 50% 0 no-repeat fixed; height: 1100px; }
+#who #fifth { background: url(../img/enthusiasts.jpg) 50% 0 no-repeat fixed; height: 1100px; }
 #who #fifth h3 { margin-top: 200px; color: #000; }
 #who #fifth p { color: #000; }
 
 
-#team #intro { background: url(../images/bryceBG.jpg) 50% 0 no-repeat fixed; height: 1200px; }
-#team #intro h2 { margin-top: 50px; }
+#team #intro { background: url(../img/bryceBG.jpg) 50% 0 no-repeat fixed; height: 1200px; }
+#team #intro h2 { margin-top: 50px; text-shadow: 0 0 10px rgba(0,0,0,.2); }
+#team #intro h3 { text-shadow: 0 0 10px rgba(0,0,0,.4); }
 #team #intro h2, #team #intro h3 { color: #fff; }
 #team #intro p, #team #second p { color: #fff; margin-right: 100px; text-shadow: 1px 1px 0 #000; }
 #team .light { color: #fff; opacity: .8; }
-#team #second { background: url(../images/markBG.jpg) 50% 0 no-repeat fixed; height: 1300px; }
+#team #second { background: url(../img/markBG.jpg) 50% 0 no-repeat fixed; height: 1300px; }
 #team #second h3, #team #second p { color: #fff; }
 #team #second .light { opacity: .8; color: #fff; }
-#team #third { background: #fff; height: 800px; }
+#team #third { background: #fff /*url(../img/fourthBG.jpg) 50% 0 no-repeat fixed*/; height: 800px; }
 #team #third { color: #000; }
 #team #third h3 { padding-top: 40px; }
 #team #third p { color: #000; }
 #team .tarsier {
-	background: url(../images/tarsier.gif) no-repeat fixed;
+	background: url(../img/tarsier.gif) no-repeat fixed;
 	height: 800px;
 	margin: 0 auto;
 	padding: 0;
@@ -231,7 +237,7 @@ h3 { font: 40px/36px Arvo, Georgia, serif; letter-spacing: -.03em; padding: 0; m
 }
 
 
-#portfolio { background: url(../images/portfolioBG.gif) no-repeat 0 0; }
+#portfolio { background: url(../img/portfolioBG.jpg) no-repeat 0 0; }
 #portfolio #content {  padding: 0 30px; height: auto; overflow: hidden;  }
 #portfolio #content h2 { margin: 30px 0 0 30px; color: #000; opacity: .6; filter: alpha(opacity=60); padding-top:100px; }
 #portfolio #content ul { padding: 0 0 150px 30px; height: auto; overflow: hidden; }
@@ -240,7 +246,7 @@ h3 { font: 40px/36px Arvo, Georgia, serif; letter-spacing: -.03em; padding: 0; m
     -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);  
     -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);  
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1); }
-#portfolio #content li.inactive { background: url(../images/diag-tile.gif) repeat; }
+#portfolio #content li.inactive { background: url(../img/diag-tile.gif) repeat; }
 #portfolio #content li.active p.hidden { display:block; }
 
 
@@ -251,10 +257,10 @@ h3 { font: 40px/36px Arvo, Georgia, serif; letter-spacing: -.03em; padding: 0; m
 #portfolio #content li.active p.hidden { display:block; }
 
 #not #wrapper { height: 2200px; }
-#not #intro { background: url(../images/o.gif) 50% 0 no-repeat fixed; height: auto; overflow: hidden;  margin: 0 auto; }
-#not .a { background: url(../images/a.png) 50% 0 no-repeat fixed; height: 2500px; margin: 0 auto; padding: 0; position: absolute; width: 1000px; z-index: 200;}
-#not .t { background: url(../images/t.png) 50% 0 no-repeat fixed; height: 2500px; margin: 0 auto; padding: 0; position: absolute; width: 1000px; z-index: 201;}
-#not .v { background: url(../images/v.gif) 50% 0 no-repeat fixed; height: 2500px; margin: 0 auto; padding: 0; position: absolute; width: 1000px; z-index: 202;}
+#not #intro { background: url(../img/o.gif) 50% 0 no-repeat fixed; height: auto; overflow: hidden;  margin: 0 auto; }
+#not .a { background: url(../img/a.png) 50% 0 no-repeat fixed; height: 2500px; margin: 0 auto; padding: 0; position: absolute; width: 1000px; z-index: 200;}
+#not .t { background: url(../img/t.png) 50% 0 no-repeat fixed; height: 2500px; margin: 0 auto; padding: 0; position: absolute; width: 1000px; z-index: 201;}
+#not .v { background: url(../img/v.gif) 50% 0 no-repeat fixed; height: 2500px; margin: 0 auto; padding: 0; position: absolute; width: 1000px; z-index: 202;}
 
 #not h2 { color: #000; }
 #not h3 { color: #000; margin: 0; }
@@ -266,6 +272,6 @@ p.tiny, #who p.tiny { font: 10px Arial, sans-serif; text-transform: uppercase; c
 p.tiny #pixels { font: bold 14px Arial, sans-serif; color: #000; }
 .light { opacity: .5; }
 
-#footer { border: 1px solid #eee; height: 120px; background: #fff url(../images/oatv-logo.gif) 50px 45px no-repeat; -moz-box-shadow: inset 0 0 12px #ccc; -webkit-box-shadow: inset 0 0 12px #ccc; box-shadow: inset 0 0x 12px #ccc; }
+#footer { border: 1px solid #eee; height: 120px; background: #fff url(../img/oatv-logo.gif) 50px 45px no-repeat; -moz-box-shadow: inset 0 0 12px #ccc; -webkit-box-shadow: inset 0 0 12px #ccc; box-shadow: inset 0 0x 12px #ccc; }
 #footer p { font: 11px/14px Arial, sans-serif; color: #444; margin: 36px 0 0 200px; }
 #footer strong { color: #000; }
