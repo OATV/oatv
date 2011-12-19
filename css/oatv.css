@@ -214,7 +214,8 @@ h3 { font: 40px/36px Arvo, Georgia, serif; letter-spacing: -.03em; padding: 0; m
 
 
 #team #intro { background: url(../img/bryceBG.jpg) 50% 0 no-repeat fixed; height: 1200px; }
-#team #intro h2 { margin-top: 50px; }
+#team #intro h2 { margin-top: 50px; text-shadow: 0 0 10px rgba(0,0,0,.2); }
+#team #intro h3 { text-shadow: 0 0 10px rgba(0,0,0,.4); }
 #team #intro h2, #team #intro h3 { color: #fff; }
 #team #intro p, #team #second p { color: #fff; margin-right: 100px; text-shadow: 1px 1px 0 #000; }
 #team .light { color: #fff; opacity: .8; }
