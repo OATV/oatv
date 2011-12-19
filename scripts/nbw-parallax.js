@@ -80,11 +80,9 @@ $(document).ready(function() { //when the document is ready...
 			$firstBG.css({'backgroundPosition': newPos(0, windowHeight, pos, 900, 0.3)}); 
 			
 			$notFirstBG.css({'backgroundPosition': newPos(50, windowHeight, pos, 1580, 0.8)}); 
-// 			$a.css({'backgroundPosition': newPos(50, windowHeight, pos, 1680, 0.1)});
-// 			$t.css({'backgroundPosition': newPos(50, windowHeight, pos, 1425, 0.5)});
-			$a.css({'backgroundPosition': newPos(50, windowHeight, pos, 1602, 0.5)});
-			$t.css({'backgroundPosition': newPos(50, windowHeight, pos, 1820, 0.1)});
-			$v.css({'backgroundPosition': newPos(50, windowHeight, pos, 1645, 0.3)});
+			$a.css({'backgroundPosition': newPos(50, windowHeight, pos, 1568, 0.5)});
+			$t.css({'backgroundPosition': newPos(50, windowHeight, pos, 1400, 0.1)});
+			$v.css({'backgroundPosition': newPos(50, windowHeight, pos, 1546, 0.3)});
 			
 		}
 		
