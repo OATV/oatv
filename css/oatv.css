@@ -47,10 +47,10 @@ menu, menu li { float: left; list-style-type: none; padding: 0; margin: 0; }
 #header menu li a.select { color: #444; background: #eee; }
 
 p {
-	margin: 0 0 16px 0;	
-	font: 14px/20px Arvo, Helvetica, Arial, sans-serif; 
+	margin: 0 0 16px 0;
+	font: 14px/20px Arvo, Helvetica, Arial, sans-serif;
 	color: #000;
-	
+
 }
 
 p, ul{
@@ -77,9 +77,9 @@ h2{
 	//opacity: .6;
 	padding: 0;
 	margin: 0 0 20px;
-	letter-spacing: -4px; 
+	letter-spacing: -4px;
 	text-transform: uppercase;
-	color: #000;	
+	color: #000;
 }
 
 
@@ -87,7 +87,7 @@ h3 { font: 40px/36px Arvo, Georgia, serif; letter-spacing: -.03em; padding: 0; m
 
 
 .float-left{
-	float: left;	
+	float: left;
 	margin: 0 0 0 40px;
 }
 
@@ -109,7 +109,7 @@ h3 { font: 40px/36px Arvo, Georgia, serif; letter-spacing: -.03em; padding: 0; m
 }
 
 #nav li{
-	margin: 0 0 15px 0;	
+	margin: 0 0 15px 0;
 }
 
 #header, #intro, #second{
@@ -118,11 +118,11 @@ h3 { font: 40px/36px Arvo, Georgia, serif; letter-spacing: -.03em; padding: 0; m
 
 #header{
 	background: #fff;
-	height: 100px;	
+	height: 100px;
 	position: fixed;
 	clear: both;
 	z-index: 999;
-	-moz-box-shadow: inset 0 0 12px #ccc; -webkit-box-shadow: inset 0 0 12px #ccc; box-shadow: inset 0 0x 12px #ccc; 
+	-moz-box-shadow: inset 0 0 12px #ccc; -webkit-box-shadow: inset 0 0 12px #ccc; box-shadow: inset 0 0x 12px #ccc;
 }
 
 #intro{
@@ -157,7 +157,7 @@ h3 { font: 40px/36px Arvo, Georgia, serif; letter-spacing: -.03em; padding: 0; m
 #third {
 	color: #fff;
 	height: 1000px;
-	padding: 100px 0 0 0;	
+	padding: 100px 0 0 0;
 }
 
 #third p { color: #fff; }
@@ -184,11 +184,11 @@ h3 { font: 40px/36px Arvo, Georgia, serif; letter-spacing: -.03em; padding: 0; m
 .story .float-left, .story .float-right {
 	padding: 80px 0 0 0;
 	position: relative;
-	width: 350px;	
+	width: 350px;
 }
 
 
-#who h2 { font: 400 90px/90px Oswald, Georgia, serif; margin-bottom: 0; padding: 0; color: #000; 
+#who h2 { font: 400 90px/90px Oswald, Georgia, serif; margin-bottom: 0; padding: 0; color: #000;
 			/*font-size-adjust:0.531; //re-calculate adjustment */
 		}
 #who h3 { font: normal 48px/40px Arvo, Georgia, serif; margin-bottom: 12px; letter-spacing: -2px; font-size-adjust:0.531; //re-calculate adjustment }
@@ -218,7 +218,7 @@ h3 { font: 40px/36px Arvo, Georgia, serif; letter-spacing: -.03em; padding: 0; m
 #team #intro h2, #team #intro h3 { color: #fff; }
 #team #intro p, #team #second p { color: #fff; margin-right: 100px; text-shadow: 1px 1px 0 #000; }
 #team .light { color: #fff; opacity: .8; }
-#team #second { background: url(../img/markBG.jpg) 50% 0 no-repeat fixed; height: 1300px; }
+#team #second { background: url(../img/markBG.jpg) 0 0 no-repeat fixed; height: 1300px; }
 #team #second h3, #team #second p { color: #fff; }
 #team #second .light { opacity: .8; color: #fff; }
 #team #third { background: #fff /*url(../img/fourthBG.jpg) 50% 0 no-repeat fixed*/; height: 800px; }
@@ -242,9 +242,9 @@ h3 { font: 40px/36px Arvo, Georgia, serif; letter-spacing: -.03em; padding: 0; m
 #portfolio #content h2 { margin: 30px 0 0 30px; color: #000; opacity: .6; filter: alpha(opacity=60); padding-top:100px; }
 #portfolio #content ul { padding: 0 0 150px 30px; height: auto; overflow: hidden; }
 #portfolio #content ul, #portfolio #content ul li { float: left; list-style-type: none; }
-#portfolio #content li { cursor: pointer; margin: 2px; ; padding: 10px; width: 125px; height: 80px; opacity: .6;filter: alpha(opacity=60); background: #fff;     
-    -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);  
-    -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);  
+#portfolio #content li { cursor: pointer; margin: 2px; ; padding: 10px; width: 125px; height: 80px; opacity: .6;filter: alpha(opacity=60); background: #fff;
+    -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1); }
 #portfolio #content li.inactive { background: url(../img/diag-tile.gif) repeat; }
 #portfolio #content li.active p.hidden { display:block; }
