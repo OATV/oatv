@@ -222,7 +222,7 @@ h3 { font: 40px/36px Arvo, Georgia, serif; letter-spacing: -.03em; padding: 0; m
 #team #second { background: url(../img/markBG.jpg) 50% 0 no-repeat fixed; height: 1300px; }
 #team #second h3, #team #second p { color: #fff; }
 #team #second .light { opacity: .8; color: #fff; }
-#team #third { background: #fff /*url(../img/fourthBG.jpg) 50% 0 no-repeat fixed*/; height: 800px; }
+#team #third { background: url(../img/timBG-new.jpg) 50% 0 no-repeat fixed; height: 900px; }
 #team #third { color: #000; }
 #team #third h3 { padding-top: 40px; }
 #team #third p { color: #000; }

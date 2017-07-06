@@ -21,7 +21,7 @@ h2{ //font-family: AlternateGothicFSNo2, Georgia, sans-serif; font: 600 40px/36p
 h3 { font: 20px/20px Arvo, MuseoSlab-500, Georgia, serif; letter-spacing: -.03em; padding: 0; margin: 0 0 20px; opacity: .7; }
 
 .float-left{ float: left; margin: 0; }
-.float-right{ float: left; margin: 0 0 0 80px; }
+.float-right{ float: left; margin: 0 0 0 20px; }
 
 /*.center{ font-size: 2.5em; padding: 80px 0; text-align: center; }*/
 
@@ -91,7 +91,7 @@ h3 { font: 20px/20px Arvo, MuseoSlab-500, Georgia, serif; letter-spacing: -.03em
 
 #team #intro .story { width: 320px; }
 #team #intro h2 { padding: 10px 20px; margin-bottom: 20px; opacity: .8; color: #ddd; }
-#team #intro h3, #team #intro p { padding: 10px 20px; margin: 0; background-color: #000; opacity: .6; color: #fff; width: 180px; }
+#team #intro h3, #team #intro p { padding: 10px 20px; margin: 0; background-color: #000; opacity: .6; color: #fff; /*width: 180px;*/ }
 
 #team #second {
 	background: url(../img/mobi-v-markBG.jpg) center 0 no-repeat;
@@ -102,16 +102,17 @@ h3 { font: 20px/20px Arvo, MuseoSlab-500, Georgia, serif; letter-spacing: -.03em
 }
 
 #team #second h3 { margin: 170px 0 0 0; }
-#team #second h3, #team #second p { padding: 10px 20px; background-color: #000; opacity: .6; color: #fff; width: 180px; }
+#team #second h3, #team #second p { padding: 10px 20px; background-color: #000; opacity: .6; color: #fff; /*width: 180px;*/ }
 
 #team #third {
-	background: url(../img/mobi-v-timBG.jpg) -200px 0 no-repeat;
-	height: 768px;
+	background: url(../img/mobi-v-timBG-new2.jpg) center 0 no-repeat;
+	height: 1500px;
 	margin: 0;
 	padding: 0;
 }
 
-#team #third h3, #team #third p { padding: 10px 20px; margin: 0; background-color: #000; opacity: .6; color: #fff; width: 180px; }
+#team #third h3, #team #third p { padding: 10px 20px; margin: 0; background-color: #000; opacity: .6; color: #fff; /*width: 180px;*/ }
+#team #third h3 { margin-top: 300px; }
 
 #portfolio { background: url(../img/mobi-v-portfolioBG.jpg) 0 0 no-repeat; }
 #portfolio #content {  padding: 100px 0 30px 0; height: auto; overflow: hidden; }
