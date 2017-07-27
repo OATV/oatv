@@ -1,0 +1,46 @@
+menu {
+    &, li {
+        float: left;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+}
+
+#header menu li a {
+    color: #bbcccc;
+    display: block;
+    text-decoration: none;
+    word-wrap: break-word;
+    width: 110px;
+    height: 90px;
+    padding: 10px 0 0 10px;
+    letter-spacing: 1px;
+    font: 400 34px/34px Oswald, "Arial Narrow", sans-serif;
+    text-transform: uppercase;
+    float: left;
+    border-right: 1px solid #cccccc;
+    &.select {
+        color: #444;
+        background: #eee;
+    }
+    @media @mobi-v {
+        width: 60px;
+        height: 80px;
+        padding: 20px 0 0 10px;
+        letter-spacing: 1px;
+        font: 400 20px/18px Oswald, "Arial Narrow", sans-serif;
+    }
+}
+
+#header .small {
+    font: 400 20px/20px Oswald, AlternateGothicFSNo2, "Arial Narrow", sans-serif;
+    display: block;
+    height: 20px;
+    @media @mobi-v {
+        font: 400 11px/10px Oswald, AlternateGothicFSNo2, "Arial Narrow", sans-serif;
+        display: block;
+        height: 12px;
+        letter-spacing: normal;
+    }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "oatv",
+  "version": "1.0.0",
+  "description": "OATV Website CSS",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/OATV/oatv"
+  },
+  "author": "Dax Hansen",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-less": "^1.4.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-less": "^0.1.7",
+    "grunt-livereload": "^0.1.3",
+    "jquery": "^3.1.1",
+    "load-grunt-tasks": "^3.5.2"
+  }
+}
