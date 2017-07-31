@@ -35,25 +35,30 @@ h1 {
     }
 }
 
-// h2 {
-//     font-family: AlternateGothicFSNo2, Georgia, sans-serif;
-//     font: 400 100px/90px Oswald, AlternateGothicFSNo2, "Arial Narrow", serif; 
-//     font-size-adjust:0.531; 
-//     font-style:normal; 
-//     opacity: .6; 
-//     padding: 0; 
-//     margin: 0 0 20px; 
-//     letter-spacing: -4px; 
-//     text-transform: uppercase; 
-//     color: #000; 
-// }
+h2 {
+    font-family: AlternateGothicFSNo2, Georgia, sans-serif;
+    font: 400 100px/90px Oswald, AlternateGothicFSNo2, "Arial Narrow", serif; 
+    font-size-adjust:0.531; 
+    font-style:normal; 
+    opacity: .6; 
+    padding: 0; 
+    margin: 0 0 20px; 
+    letter-spacing: -4px; 
+    text-transform: uppercase; 
+    color: #000;
+    @media @mobi-v {
+        font: 600 40px/36px Oswald, AlternateGothicFSNo2, "Arial Narrow", serif;
+        letter-spacing: -1px;
+        opacity: 1;
+    }
+}
 
 h3 {
     font: 40px/36px Arvo, MuseoSlab-500, Georgia, serif;
     letter-spacing: -.03em;
     padding: 0;
     margin: 0 0 20px;
-    opacity: 70%;
+    opacity:0.7;
     @media @mobi-v {
         font: 20px/20px Arvo, MuseoSlab-500, Georgia, serif;
     }

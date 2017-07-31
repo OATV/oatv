@@ -2,9 +2,12 @@
 * {
     box-sizing: border-box;
 }
+html, body {
+    height: 100%;
+}
 body {
   margin:0;
-  width:960px;
+  0width:960px;
   padding:0;
 }
 @media @mobi-v {
@@ -55,45 +58,53 @@ img {
 #intro {
   width:100%;
   background:url(../img/m-firstBG.jpg) no-repeat;
-  height:1000px;
+  background-size: cover;
+  height:auto;
   margin:0;
-  padding:100px 0 0;
-  @media mobi-v {
-    padding: 60px 0 0;
+  padding:100px 0;
+  @media @mobi-v {
+    padding: 160px 0;
+    background: url(../img/mobi-v-firstBG.jpg) 0 no-repeat;
+    background-size: 150%;
+  }
+}
+#wrapper {
+  width:100%;
+  height:auto;
+  overflow:hidden;
+  @media @mobi-v {
+    width: 100%;
   }
 }
 #second {
   width:100%;
-  background:url(../img/m-secondBG.gif) -100px 0 no-repeat;
-  height:2000px;
-  margin:0;
-  padding:0;
-  @media @mobi-v {
-    height: 2400px;
-  }
-}
-#wrapper {
-  width:768px;
+  // background:url(../img/m-secondBG.gif) -100px 0 no-repeat;
+  background-size: cover;
   height:auto;
-  overflow:hidden;
+  margin:0;
+  padding:60px 0;
   @media @mobi-v {
-    width: 320px;
+    ul {
+      padding-left: 20px;
+    }
   }
 }
+
 #third {
-  background:url(../img/m-thirdBG.jpg) no-repeat;
-  height:768px;
+  background:url(../img/m-thirdBG.jpg) center center no-repeat;
+  background-size: cover;
   margin:0;
-  padding:0;
+  padding:120px 0;
+  height: auto;
   h3 {
-    padding-top:100px;
     color:#ffffff;
   }
   p {
     color:#ffffff;
   }
   @media @mobi-v {
-    height: 650px;
+    background: url(../img/mobi-v-thirdBG.jpg) center center no-repeat;
+    background-size: cover;
     p {
         text-shadow: 0 1px 0 #000;
     }
@@ -101,37 +112,31 @@ img {
 }
 #fourth {
   background:url(../img/m-fourthBG.jpg) no-repeat;
-  height:768px;
+  background-size: cover;
   margin:0;
-  padding:0;
+  padding: 60px 0;
   @media @mobi-v {
-    height: 580px;
+    background-image: url(../img/mobi-v-fourthBG.jpg);
   }
 }
 #fifth {
   background:url(../img/m-fifthBG.jpg) -180px 0 no-repeat;
-  height:768px;
+  background-size: cover;
   margin:0;
-  padding:0;
+  padding: 60px 0;
   @media @mobi-v {
-    height: 750px;
+    background: url(../img/m-fifthBG.jpg) bottom right no-repeat;
+    background-size: 100%;
+    padding: 60px 0 140px;
+    .story {
+      padding-right: 80px;
+    }
   }
 }
 .story {
   margin:0 auto;
-  min-width:980px;
-  width:980px;
+  padding: 0 20px;
   .float-left, .float-right {
-    padding:80px 0 0 0;
-    position:relative;
-    width:500px;
-  }
-  @media @mobi-v {
-    min-width: 280px;
-    width: 280px;
-    .float-left, .float-right {
-        padding: 80px 0 0 0;
-        width: 280px;
-      }
+    float: none;
   }
 }

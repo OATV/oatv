@@ -2,18 +2,22 @@
 * {
   box-sizing: border-box;
 }
+html,
+body {
+  height: 100%;
+}
 body {
   margin: 0;
-  width: 960px;
+  0width: 960px;
   padding: 0;
 }
-@media all and (max-device-width: 480px), only screen and (-webkit-min-device-pixel-ratio: 2) {
+@media all and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
   width: 320px;
 }
 .pad-40 {
   padding-left: 40px;
 }
-@media all and (max-device-width: 480px), only screen and (-webkit-min-device-pixel-ratio: 2) {
+@media all and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
   .pad-40 {
     padding-left: 10px;
   }
@@ -25,7 +29,7 @@ img {
   float: left;
   margin: 0 0 0 40px;
 }
-@media all and (max-device-width: 480px), only screen and (-webkit-min-device-pixel-ratio: 2) {
+@media all and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
   .float-left {
     margin: 0;
   }
@@ -34,7 +38,7 @@ img {
   float: left;
   margin: 0 0 0 240px;
 }
-@media all and (max-device-width: 480px), only screen and (-webkit-min-device-pixel-ratio: 2) {
+@media all and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
   .float-right {
     margin: 0 0 0 20px;
   }
@@ -61,53 +65,57 @@ img {
 #intro {
   width: 100%;
   background: url(../img/m-firstBG.jpg) no-repeat;
-  height: 1000px;
+  background-size: cover;
+  height: auto;
   margin: 0;
-  padding: 100px 0 0;
+  padding: 100px 0;
 }
-@media mobi-v {
+@media all and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
   #intro {
-    padding: 60px 0 0;
+    padding: 160px 0;
+    background: url(../img/mobi-v-firstBG.jpg) 0 no-repeat;
+    background-size: 150%;
+  }
+}
+#wrapper {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+@media all and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  #wrapper {
+    width: 100%;
   }
 }
 #second {
   width: 100%;
-  background: url(../img/m-secondBG.gif) -100px 0 no-repeat;
-  height: 2000px;
-  margin: 0;
-  padding: 0;
-}
-@media all and (max-device-width: 480px), only screen and (-webkit-min-device-pixel-ratio: 2) {
-  #second {
-    height: 2400px;
-  }
-}
-#wrapper {
-  width: 768px;
+  background-size: cover;
   height: auto;
-  overflow: hidden;
+  margin: 0;
+  padding: 60px 0;
 }
-@media all and (max-device-width: 480px), only screen and (-webkit-min-device-pixel-ratio: 2) {
-  #wrapper {
-    width: 320px;
+@media all and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  #second ul {
+    padding-left: 20px;
   }
 }
 #third {
-  background: url(../img/m-thirdBG.jpg) no-repeat;
-  height: 768px;
+  background: url(../img/m-thirdBG.jpg) center center no-repeat;
+  background-size: cover;
   margin: 0;
-  padding: 0;
+  padding: 120px 0;
+  height: auto;
 }
 #third h3 {
-  padding-top: 100px;
   color: #ffffff;
 }
 #third p {
   color: #ffffff;
 }
-@media all and (max-device-width: 480px), only screen and (-webkit-min-device-pixel-ratio: 2) {
+@media all and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
   #third {
-    height: 650px;
+    background: url(../img/mobi-v-thirdBG.jpg) center center no-repeat;
+    background-size: cover;
   }
   #third p {
     text-shadow: 0 1px 0 #000;
@@ -115,47 +123,38 @@ img {
 }
 #fourth {
   background: url(../img/m-fourthBG.jpg) no-repeat;
-  height: 768px;
+  background-size: cover;
   margin: 0;
-  padding: 0;
+  padding: 60px 0;
 }
-@media all and (max-device-width: 480px), only screen and (-webkit-min-device-pixel-ratio: 2) {
+@media all and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
   #fourth {
-    height: 580px;
+    background-image: url(../img/mobi-v-fourthBG.jpg);
   }
 }
 #fifth {
   background: url(../img/m-fifthBG.jpg) -180px 0 no-repeat;
-  height: 768px;
+  background-size: cover;
   margin: 0;
-  padding: 0;
+  padding: 60px 0;
 }
-@media all and (max-device-width: 480px), only screen and (-webkit-min-device-pixel-ratio: 2) {
+@media all and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
   #fifth {
-    height: 750px;
+    background: url(../img/m-fifthBG.jpg) bottom right no-repeat;
+    background-size: 100%;
+    padding: 60px 0 140px;
+  }
+  #fifth .story {
+    padding-right: 80px;
   }
 }
 .story {
   margin: 0 auto;
-  min-width: 980px;
-  width: 980px;
+  padding: 0 20px;
 }
 .story .float-left,
 .story .float-right {
-  padding: 80px 0 0 0;
-  position: relative;
-  width: 500px;
-}
-@media all and (max-device-width: 480px), only screen and (-webkit-min-device-pixel-ratio: 2) {
-  .story {
-    min-width: 280px;
-    width: 280px;
-  }
-  .story .float-left,
-  .story .float-right {
-    padding: 80px 0 0 0;
-    width: 280px;
-  }
+  float: none;
 }
 @font-face {
   font-family: Oswald;
@@ -173,7 +172,7 @@ p {
   font: 14px/20px Arvo, MuseoSlab-500, Helvetica, Arial, sans-serif;
   color: #000;
 }
-@media all and (max-device-width: 480px), only screen and (-webkit-min-device-pixel-ratio: 2) {
+@media all and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
   p {
     margin: 0 0 12px 0;
     font: 12px/18px Arvo, MuseoSlab-500, Helvetica, Arial, sans-serif;
@@ -188,9 +187,28 @@ h1 {
   font: normal 48px/42px Arvo, MuseoSlab-500, AlternateGothicFSNo2, Georgia, serif;
   text-transform: uppercase;
 }
-@media all and (max-device-width: 480px), only screen and (-webkit-min-device-pixel-ratio: 2) {
+@media all and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
   h1 {
     font: 600 28px/26px Arvo, MuseoSlab-500, AlternateGothicFSNo2, Georgia, serif;
+  }
+}
+h2 {
+  font-family: AlternateGothicFSNo2, Georgia, sans-serif;
+  font: 400 100px/90px Oswald, AlternateGothicFSNo2, "Arial Narrow", serif;
+  font-size-adjust: 0.531;
+  font-style: normal;
+  opacity: .6;
+  padding: 0;
+  margin: 0 0 20px;
+  letter-spacing: -4px;
+  text-transform: uppercase;
+  color: #000;
+}
+@media all and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  h2 {
+    font: 600 40px/36px Oswald, AlternateGothicFSNo2, "Arial Narrow", serif;
+    letter-spacing: -1px;
+    opacity: 1;
   }
 }
 h3 {
@@ -198,9 +216,9 @@ h3 {
   letter-spacing: -0.03em;
   padding: 0;
   margin: 0 0 20px;
-  opacity: 70%;
+  opacity: 0.7;
 }
-@media all and (max-device-width: 480px), only screen and (-webkit-min-device-pixel-ratio: 2) {
+@media all and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
   h3 {
     font: 20px/20px Arvo, MuseoSlab-500, Georgia, serif;
   }
@@ -217,9 +235,9 @@ menu li {
   display: block;
   text-decoration: none;
   word-wrap: break-word;
-  width: 110px;
-  height: 90px;
-  padding: 10px 0 0 10px;
+  width: 120px;
+  height: 100px;
+  padding: 10px 0 10px 10px;
   letter-spacing: 1px;
   font: 400 34px/34px Oswald, "Arial Narrow", sans-serif;
   text-transform: uppercase;
@@ -230,12 +248,14 @@ menu li {
   color: #444;
   background: #eee;
 }
-@media all and (max-device-width: 480px), only screen and (-webkit-min-device-pixel-ratio: 2) {
+@media all and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
   #header menu li a {
-    width: 60px;
-    height: 80px;
-    padding: 20px 0 0 10px;
+    width: 70px;
+    height: 100px;
+    padding: 20px 0 10px 10px;
     letter-spacing: 1px;
+    border-left: 1px solid #eee;
+    border-right: none;
     font: 400 20px/18px Oswald, "Arial Narrow", sans-serif;
   }
 }
@@ -244,7 +264,7 @@ menu li {
   display: block;
   height: 20px;
 }
-@media all and (max-device-width: 480px), only screen and (-webkit-min-device-pixel-ratio: 2) {
+@media all and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
   #header .small {
     font: 400 11px/10px Oswald, AlternateGothicFSNo2, "Arial Narrow", sans-serif;
     display: block;
@@ -258,8 +278,9 @@ menu li {
   background: #ffffff url(../img/oatv-logo.png) 0 12px no-repeat;
   -webkit-box-shadow: inset 0 0 12px #cccccc;
 }
-@media all and (max-device-width: 480px), only screen and (-webkit-min-device-pixel-ratio: 2) {
+@media all and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
   #footer {
+    background: #fff url(../img/mobi-oatv-logo.png) 0 12px no-repeat;
     height: 100px;
   }
 }
@@ -268,7 +289,7 @@ menu li {
   color: #444444;
   padding: 36px 0 0 200px;
 }
-@media all and (max-device-width: 480px), only screen and (-webkit-min-device-pixel-ratio: 2) {
+@media all and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
   #footer p {
     font: 10px/12px "Helvetica Neue", Helvetica, Arial, sans-serif;
     padding: 15px 0 0 120px;
@@ -279,14 +300,20 @@ menu li {
 }
 #portfolio {
   background: url(../img/m-portfolioBG.jpg) no-repeat;
-  height: 1024px;
+  background-size: cover;
+}
+@media all and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  #portfolio {
+    background-image: url(../img/mobi-v-portfolioBG.jpg);
+    background-position: 0 -50px;
+  }
 }
 #portfolio #content {
-  padding: 0 20px;
+  padding: 100px 20px;
   height: auto;
   overflow: hidden;
 }
-@media all and (max-device-width: 480px), only screen and (-webkit-min-device-pixel-ratio: 2) {
+@media all and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
   #portfolio #content {
     padding: 100px 0 30px 0;
   }
@@ -296,19 +323,17 @@ menu li {
   color: #000000;
   opacity: .6;
   filter: alpha(opacity=60);
-  padding-top: 100px;
 }
 #portfolio #content ul {
-  padding: 0 0 150px 30px;
+  padding: 0 30px;
   height: auto;
   overflow: hidden;
   float: left;
   list-style-type: none;
 }
-@media all and (max-device-width: 480px), only screen and (-webkit-min-device-pixel-ratio: 2) {
+@media all and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
   #portfolio #content ul {
-    padding: 0 0 150px 10px;
-    width: 300px;
+    padding: 0 20px 150px 20px;
   }
 }
 #portfolio #content ul li {
@@ -317,9 +342,15 @@ menu li {
 }
 #portfolio #content li {
   cursor: pointer;
-  margin: 2px;
-  padding: 10px;
-  width: 125px;
+  padding: 2px;
+  width: 33%;
+}
+@media all and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  #portfolio #content li {
+    width: 50%;
+  }
+}
+#portfolio #content li > div {
   height: 80px;
   opacity: .6;
   filter: alpha(opacity=60);
@@ -327,11 +358,32 @@ menu li {
   -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+  padding: 10px;
 }
-@media all and (max-device-width: 480px), only screen and (-webkit-min-device-pixel-ratio: 2) {
-  #portfolio #content li {
-    width: 33%;
-    height: 40px;
+#portfolio #content li.active {
+  width: 100%;
+}
+#portfolio #content li.active > div {
+  height: 184px;
+}
+@media all and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  #portfolio #content li.active {
+    width: 100%;
+  }
+  #portfolio #content li.active > div {
+    height: auto;
+    opacity: 1;
+  }
+}
+#portfolio #content li.active p.hidden {
+  display: block;
+}
+#portfolio #content li.inactive {
+  background-color: #cccccc;
+}
+@media all and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  #portfolio #content li.inactive {
+    background: url(../img/diag-tile.gif) repeat;
   }
 }
 #portfolio #content li p {
@@ -340,35 +392,15 @@ menu li {
   margin-bottom: 6px;
   color: #000000;
 }
-@media all and (max-device-width: 480px), only screen and (-webkit-min-device-pixel-ratio: 2) {
+@media all and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
   #portfolio #content li p {
+    font-size: 14px;
+    line-height: 20px;
     padding: 0 10px 20px 0;
   }
 }
 #portfolio #content li p.hidden {
   display: none;
-}
-#portfolio #content li.inactive {
-  background-color: #cccccc;
-}
-@media all and (max-device-width: 480px), only screen and (-webkit-min-device-pixel-ratio: 2) {
-  #portfolio #content li.inactive {
-    background: url(../img/diag-tile.gif) repeat;
-  }
-}
-#portfolio #content li.active {
-  width: 423px;
-  height: 184px;
-}
-@media all and (max-device-width: 480px), only screen and (-webkit-min-device-pixel-ratio: 2) {
-  #portfolio #content li.active {
-    width: 275px;
-    height: auto;
-    opacity: 1;
-  }
-}
-#portfolio #content li.active p.hidden {
-  display: block;
 }
 #portfolio #content h3 {
   font: 400 14px/14px Oswald, "Arial Narrow", serif;
@@ -379,35 +411,36 @@ menu li {
 }
 #team #intro {
   background: url(../img/m-bryceBG.jpg) -250px 0 no-repeat;
-  height: 668px;
   margin: 0;
-  padding: 100px 0 0 0;
+  padding: 120px 0 0 0;
   border-bottom: 1px solid #fff;
 }
 #team #intro h2 {
-  font-size: 100px;
-  opacity: .8;
   color: #ddd;
-  text-shadow: 1px 1px 0 #000;
+}
+@media all and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+  #team #intro h2 {
+    color: #fff;
+    margin-bottom: 40px;
+    text-shadow: none;
+  }
 }
 #team #intro h3,
 #team #intro p {
   padding: 10px 20px;
   margin: 0;
-  background-color: #000;
-  opacity: .6;
+  background-color: rgba(0, 0, 0, 0.6);
   color: #fff;
 }
 #team #intro .story {
-  width: 400px;
+  width: 60%;
+  margin: 0;
+  padding: 10px 10px 100px 0;
 }
-@media all and (max-device-width: 480px), only screen and (-webkit-min-device-pixel-ratio: 2) {
+@media all and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
   #team #intro {
     background: url(../img/mobi-v-bryceBG.jpg) 0 0 no-repeat;
-    height: 600px;
-  }
-  #team #intro .story {
-    width: 320px;
+    background-size: cover;
   }
   #team #intro h2 {
     padding: 10px 20px;
@@ -417,10 +450,9 @@ menu li {
   }
 }
 #team #second {
-  background: url(../img/m-markBG.jpg) center 0 no-repeat;
-  height: 768px;
+  background: url(../img/mobi-v-markBG.jpg) center 0 no-repeat;
   margin: 0;
-  padding: 0;
+  padding: 60px 0 60px;
   border-bottom: 1px solid #fff;
 }
 #team #second h3,
@@ -431,19 +463,31 @@ menu li {
   opacity: .6;
   color: #fff;
 }
-@media all and (max-device-width: 480px), only screen and (-webkit-min-device-pixel-ratio: 2) {
+@media all and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
   #team #second {
-    height: 1100px;
+    padding: 320px 0 160px;
   }
-  #team #second h3 {
-    margin: 170px 0 0 0;
+  #team #second .story {
+    padding: 0 20px;
+  }
+  #team #second p {
+    margin-bottom: 10px;
   }
 }
 #team #third {
-  background: url(../img/m-timBG.jpg) -200px 0 no-repeat;
-  height: 768px;
+  background: url(../img/mobi-v-timBG-new2.jpg) center 0 no-repeat;
   margin: 0;
-  padding: 0;
+  padding: 1px 0;
+}
+@media all and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+  #team #third {
+    background: url(../img/m-timBG-new.jpg) no-repeat;
+  }
+}
+@media all and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
+  #team #third {
+    background: url(../img/m-timBG-new.jpg) -100px bottom no-repeat;
+  }
 }
 #team #third h3,
 #team #third p {
@@ -453,22 +497,23 @@ menu li {
   opacity: .6;
   color: #fff;
 }
-@media all and (max-device-width: 480px), only screen and (-webkit-min-device-pixel-ratio: 2) {
-  #team #third {
-    height: 1500px;
+@media all and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  #team #third .story {
+    padding: 460px 0 0;
   }
-  #team #third h3 {
-    margin-top: 300px;
+  #team #third .story .float-right {
+    margin: 0 0 120px 20px;
+  }
+}
+@media all and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  #team #intro,
+  #team #second,
+  #team #third {
+    background-size: cover;
   }
 }
 #not #intro {
   background: url(../img/oatv-logo.png) 550px 1020px no-repeat;
-  height: 1200px;
-}
-@media all and (max-device-width: 480px), only screen and (-webkit-min-device-pixel-ratio: 2) {
-  #not #intro {
-    width: 320px;
-  }
 }
 #not #intro h2 {
   margin-bottom: 30px;

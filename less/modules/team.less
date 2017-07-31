@@ -1,79 +1,108 @@
-#team #intro {
-    background: url(../img/m-bryceBG.jpg) -250px 0 no-repeat;
-    height: 668px;
-    margin: 0;
-    padding: 100px 0 0 0;
-    border-bottom: 1px solid #fff;
-    h2 {
-        font-size: 100px;
-        opacity: .8;
-        color: #ddd;
-        text-shadow: 1px 1px 0 #000;
-    }
-    h3, p {
-        padding: 10px 20px;
+#team {
+    #intro {
+        background: url(../img/m-bryceBG.jpg) -250px 0 no-repeat;
         margin: 0;
-        background-color: #000;
-        opacity: .6;
-        color: #fff;
-    }
-    .story {
-        width: 400px;
-    }
-    @media @mobi-v {
-        background: url(../img/mobi-v-bryceBG.jpg) 0 0 no-repeat;
-        height: 600px;
-        .story {
-            width: 320px;
-        }
+        padding: 120px 0 0 0;
+        border-bottom: 1px solid #fff;
         h2 {
-            padding: 10px 20px;
-            margin-bottom: 20px;
-            opacity: .8;
+            // opacity: .8;
             color: #ddd;
+            // text-shadow: 1px 1px 0 #000;
+            @media @ipad-h {
+                color: #fff;
+                margin-bottom: 40px;
+                text-shadow: none;
+            }
+        }
+        h3, p {
+            padding: 10px 20px;
+            margin: 0;
+            background-color: rgba(0,0,0,0.6);
+            // opacity: .6;
+            color: #fff;
+        }
+        .story {
+            width: 60%;
+            margin: 0;
+            padding: 10px 10px 100px 0;
+        }
+        @media @mobi-v {
+            background: url(../img/mobi-v-bryceBG.jpg) 0 0 no-repeat;
+            background-size: cover;
+            // height: 600px;
+            .story {
+                // width: 320px;
+            }
+            h2 {
+                padding: 10px 20px;
+                margin-bottom: 20px;
+                opacity: .8;
+                color: #ddd;
+            }
         }
     }
-}
 
-#team #second {
-    background: url(../img/m-markBG.jpg) center 0 no-repeat;
-    height: 768px;
-    margin: 0;
-    padding: 0;
-    border-bottom: 1px solid #fff;
-    h3,
-    p {
-        padding: 10px 20px;
+    #second {
+        background: url(../img/mobi-v-markBG.jpg) center 0 no-repeat;
+        // height: 768px;
         margin: 0;
-        background-color: #000;
-        opacity: .6;
-        color: #fff;
-    }
-    @media @mobi-v {
-        height: 1100px;
-        h3 {
-            margin: 170px 0 0 0;
+        padding: 60px 0 60px;
+        border-bottom: 1px solid #fff;
+        h3,
+        p {
+            padding: 10px 20px;
+            margin: 0;
+            background-color: #000;
+            opacity: .6;
+            color: #fff;
+        }
+        @media @mobi-v {
+            // height: 1100px;
+            padding: 320px 0 160px; 
+            .story {
+                padding: 0 20px;
+            }
+            p {
+                margin-bottom: 10px;
+            }
         }
     }
-}
 
-#team #third {
-    background: url(../img/m-timBG.jpg) -200px 0 no-repeat;
-    height: 768px;
-    margin: 0;
-    padding: 0;
-    h3,
-    p {
-        padding: 10px 20px;
+    #third {
+        background: url(../img/mobi-v-timBG-new2.jpg) center 0 no-repeat;
+        // height: 768px;
         margin: 0;
-        background-color: #000;
-        opacity: .6;
-        color: #fff;
+        padding: 1px 0;
+        @media @ipad-h {
+            background: url(../img/m-timBG-new.jpg) no-repeat;
+        }
+        @media @ipad-v {
+            background: url(../img/m-timBG-new.jpg) -100px bottom no-repeat;
+            // height: 850px;
+        }
+        h3,
+        p {
+            padding: 10px 20px;
+            margin: 0;
+            background-color: #000;
+            opacity: .6;
+            color: #fff;
+        }
+        @media @mobi-v {
+            // height: 1500px;
+            .story {
+                padding: 460px 0 0;
+                .float-right {
+                    margin: 0 0 120px 20px;
+                }
+            }
+        }
     }
-    @media @mobi-v {
-        height: 1500px;
-        h3 {
-            margin-top: 300px;
+    #intro,
+    #second,
+    #third {
+        @media @mobi-v {
+            background-size: cover;
         }
     }
 }

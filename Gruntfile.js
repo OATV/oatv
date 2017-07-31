@@ -6,6 +6,12 @@ module.exports = function (grunt) {
             src: 'less',
             dist: 'css'
         },
+        watch: {
+            scripts: {
+                files: ['less/**/*.less'],
+                tasks: ['less']
+            }
+        },
         less: {
             production: {
                 options: {

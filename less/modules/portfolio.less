@@ -1,8 +1,12 @@
 #portfolio {
     background: url(../img/m-portfolioBG.jpg) no-repeat;
-    height: 1024px;
+    background-size: cover;
+    @media @mobi-v {
+        background-image: url(../img/mobi-v-portfolioBG.jpg);
+        background-position: 0 -50px;
+    }
     #content {
-        padding: 0 20px;
+        padding: 100px 20px;
         height: auto;
         overflow: hidden;
         @media @mobi-v {
@@ -13,17 +17,15 @@
             color: #000000;
             opacity: .6;
             filter: alpha(opacity=60);
-            padding-top: 100px;
         }
         ul {
-            padding: 0 0 150px 30px;
+            padding: 0 30px;
             height: auto;
             overflow: hidden;
             float: left;
             list-style-type: none;
             @media @mobi-v {
-                padding: 0 0 150px 10px;
-                width: 300px;
+                padding: 0 20px 150px 20px;
             }
             li {
                 float: left;
@@ -32,51 +34,56 @@
         }
         li {
             cursor: pointer;
-            margin: 2px;
-            padding: 10px;
-            width: 125px;
-            height: 80px;
-            opacity: .6;
-            filter: alpha(opacity=60);
-            background: #ffffff;
-            -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
-            -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
-
+            padding: 2px;
+            width: 33%;
             @media @mobi-v {
-                width: 33%;
-                height: 40px;
+                width: 50%;
             }
-
+            > div {
+                height: 80px;
+                opacity: .6;
+                filter: alpha(opacity=60);
+                background: #ffffff;
+                -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+                -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+                box-shadow: 0 0 5px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+                padding: 10px;
+            }
+            &.active {
+                width: 100%;
+                > div {
+                    height: 184px;
+                }
+                @media @mobi-v {
+                    width: 100%;
+                    > div {
+                        height: auto;
+                        opacity: 1;
+                    }
+                }
+                p.hidden {
+                    display: block;
+                }
+            }
+            &.inactive {
+                background-color: #cccccc;
+                @media @mobi-v {
+                    background: url(../img/diag-tile.gif) repeat;
+                }
+            }
             p {
                 font: 11px/14px Arvo, MuseoSlab-500, Helvetica, Arial, sans-serif;
                 padding: 0;
                 margin-bottom: 6px;
                 color: #000000;
                 @media @mobi-v {
+                    font-size: 14px;
+                    line-height: 20px;
                     padding: 0 10px 20px 0;
                 }
             }
             p.hidden {
                 display: none;
-            }
-        }
-        li.inactive {
-            background-color: #cccccc;
-            @media @mobi-v {
-                background: url(../img/diag-tile.gif) repeat;
-            }
-        }
-        li.active {
-            width: 423px;
-            height: 184px;
-            @media @mobi-v {
-                width: 275px;
-                height: auto;
-                opacity: 1;
-            }
-            p.hidden {
-                display: block;
             }
         }
         h3 {
