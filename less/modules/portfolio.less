@@ -1,16 +1,18 @@
 #portfolio {
-    background: url(../img/m-portfolioBG.jpg) no-repeat;
-    background-size: cover;
-    @media @mobi-v {
-        background-image: url(../img/mobi-v-portfolioBG.jpg);
-        background-position: 0 -50px;
-    }
     #content {
+        background: url(../img/m-portfolioBG.jpg) no-repeat;
+        background-size: 300%;
+        background-position: center -250px;
         padding: 100px 20px;
         height: auto;
         overflow: hidden;
         @media @mobi-v {
             padding: 100px 0 30px 0;
+            background-image: url(../img/mobi-v-portfolioBG.jpg);
+            background-position: 0 -50px;
+        }
+        @media @ipad-h {
+            background-size: 250%;
         }
         h2 {
             margin: 30px 0 0 30px;

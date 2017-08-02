@@ -329,17 +329,10 @@ menu li {
 #footer strong {
   color: #000000;
 }
-#portfolio {
-  background: url(../img/m-portfolioBG.jpg) no-repeat;
-  background-size: cover;
-}
-@media all and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
-  #portfolio {
-    background-image: url(../img/mobi-v-portfolioBG.jpg);
-    background-position: 0 -50px;
-  }
-}
 #portfolio #content {
+  background: url(../img/m-portfolioBG.jpg) no-repeat;
+  background-size: 300%;
+  background-position: center -250px;
   padding: 100px 20px;
   height: auto;
   overflow: hidden;
@@ -347,6 +340,13 @@ menu li {
 @media all and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
   #portfolio #content {
     padding: 100px 0 30px 0;
+    background-image: url(../img/mobi-v-portfolioBG.jpg);
+    background-position: 0 -50px;
+  }
+}
+@media all and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+  #portfolio #content {
+    background-size: 250%;
   }
 }
 #portfolio #content h2 {
@@ -589,9 +589,6 @@ menu li {
   #team #third {
     background-size: cover;
   }
-}
-#not #intro {
-  background: url(../img/oatv-logo.png) 550px 1020px no-repeat;
 }
 #not #intro .story {
   padding-top: 80px;
