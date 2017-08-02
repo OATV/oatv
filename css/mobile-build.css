@@ -27,7 +27,6 @@ img {
 }
 .float-left {
   float: left;
-  margin: 0 0 0 40px;
 }
 @media all and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
   .float-left {
@@ -148,9 +147,43 @@ img {
     padding-right: 80px;
   }
 }
+@media all and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
+  #who-we-are .story {
+    padding-top: 80px;
+    padding-bottom: 100px;
+  }
+  #who-we-are .story .float-left {
+    width: 75%;
+  }
+}
+@media all and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+  #who-we-are .story {
+    padding-top: 80px;
+  }
+  #who-we-are .story .float-left {
+    width: 75%;
+  }
+}
+@media all and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
+  #who-we-are #fifth {
+    background-size: 75%;
+    background-position: bottom right;
+  }
+  #who-we-are #fifth .story {
+    padding-bottom: 60px;
+  }
+  #who-we-are #fifth .float-left {
+    width: 60%;
+  }
+}
 .story {
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 40px;
+}
+@media all and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  .story {
+    padding: 0 20px;
+  }
 }
 .story .float-left,
 .story .float-right {
@@ -197,7 +230,6 @@ h2 {
   font: 400 100px/90px Oswald, AlternateGothicFSNo2, "Arial Narrow", serif;
   font-size-adjust: 0.531;
   font-style: normal;
-  opacity: .6;
   padding: 0;
   margin: 0 0 20px;
   letter-spacing: -4px;
@@ -212,11 +244,10 @@ h2 {
   }
 }
 h3 {
-  font: 40px/36px Arvo, MuseoSlab-500, Georgia, serif;
+  font: 40px/48px Arvo, MuseoSlab-500, Georgia, serif;
   letter-spacing: -0.03em;
   padding: 0;
   margin: 0 0 20px;
-  opacity: 0.7;
 }
 @media all and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
   h3 {
@@ -325,7 +356,7 @@ menu li {
   filter: alpha(opacity=60);
 }
 #portfolio #content ul {
-  padding: 0 30px;
+  padding: 0 20px;
   height: auto;
   overflow: hidden;
   float: left;
@@ -343,7 +374,7 @@ menu li {
 #portfolio #content li {
   cursor: pointer;
   padding: 2px;
-  width: 33%;
+  width: 33.3333%;
 }
 @media all and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
   #portfolio #content li {
@@ -410,10 +441,14 @@ menu li {
   color: #000000;
 }
 #team #intro {
-  background: url(../img/m-bryceBG.jpg) -250px 0 no-repeat;
+  background: url(../img/m-bryceBG.jpg) 0 0 no-repeat;
+  background-size: cover;
   margin: 0;
   padding: 120px 0 0 0;
   border-bottom: 1px solid #fff;
+}
+#team #intro .story {
+  padding: 60px 60px 100px 0;
 }
 #team #intro h2 {
   color: #ddd;
@@ -432,11 +467,6 @@ menu li {
   background-color: rgba(0, 0, 0, 0.6);
   color: #fff;
 }
-#team #intro .story {
-  width: 60%;
-  margin: 0;
-  padding: 10px 10px 100px 0;
-}
 @media all and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
   #team #intro {
     background: url(../img/mobi-v-bryceBG.jpg) 0 0 no-repeat;
@@ -447,6 +477,16 @@ menu li {
     margin-bottom: 20px;
     opacity: .8;
     color: #ddd;
+  }
+}
+@media all and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
+  #team #intro {
+    background-position: center right;
+  }
+  #team #intro .story {
+    width: 60%;
+    margin: 0;
+    padding: 10px 10px 100px 40px;
   }
 }
 #team #second {
@@ -472,6 +512,24 @@ menu li {
   }
   #team #second p {
     margin-bottom: 10px;
+  }
+}
+@media all and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
+  #team #second {
+    background: url(../img/m-markBG.jpg) center 0 no-repeat;
+  }
+  #team #second .story {
+    margin: 0;
+    width: 60%;
+  }
+}
+@media all and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+  #team #second {
+    background: url(../img/m-markBG.jpg) center 0 no-repeat;
+  }
+  #team #second .story {
+    margin: 0;
+    width: 60%;
   }
 }
 #team #third {
@@ -505,6 +563,26 @@ menu li {
     margin: 0 0 120px 20px;
   }
 }
+@media all and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
+  #team #third .story {
+    margin: 0 0 0 auto;
+    width: 55%;
+    padding: 60px 40px 60px 0;
+  }
+  #team #third .float-right {
+    margin: 0;
+  }
+}
+@media all and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+  #team #third .story {
+    margin: 0 0 0 auto;
+    width: 55%;
+    padding: 60px 40px 60px 0;
+  }
+  #team #third .float-right {
+    margin: 0;
+  }
+}
 @media all and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
   #team #intro,
   #team #second,
@@ -514,6 +592,9 @@ menu li {
 }
 #not #intro {
   background: url(../img/oatv-logo.png) 550px 1020px no-repeat;
+}
+#not #intro .story {
+  padding-top: 80px;
 }
 #not #intro h2 {
   margin-bottom: 30px;

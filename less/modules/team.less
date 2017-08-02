@@ -1,9 +1,13 @@
 #team {
     #intro {
-        background: url(../img/m-bryceBG.jpg) -250px 0 no-repeat;
+        background: url(../img/m-bryceBG.jpg) 0 0 no-repeat;
+        background-size: cover;
         margin: 0;
         padding: 120px 0 0 0;
         border-bottom: 1px solid #fff;
+        .story {
+            padding: 60px 60px 100px 0;
+        }
         h2 {
             // opacity: .8;
             color: #ddd;
@@ -21,11 +25,7 @@
             // opacity: .6;
             color: #fff;
         }
-        .story {
-            width: 60%;
-            margin: 0;
-            padding: 10px 10px 100px 0;
-        }
+        
         @media @mobi-v {
             background: url(../img/mobi-v-bryceBG.jpg) 0 0 no-repeat;
             background-size: cover;
@@ -38,6 +38,14 @@
                 margin-bottom: 20px;
                 opacity: .8;
                 color: #ddd;
+            }
+        }
+        @media @ipad-v {
+            background-position: center right;
+            .story {
+                width: 60%;
+                margin: 0;
+                padding: 10px 10px 100px 40px;
             }
         }
     }
@@ -64,6 +72,20 @@
             }
             p {
                 margin-bottom: 10px;
+            }
+        }
+        @media @ipad-v {
+            background: url(../img/m-markBG.jpg) center 0 no-repeat;
+            .story {
+                margin: 0;
+                width: 60%;
+            }
+        }
+        @media @ipad-h {
+            background: url(../img/m-markBG.jpg) center 0 no-repeat;
+            .story {
+                margin: 0;
+                width: 60%;
             }
         }
     }
@@ -95,6 +117,26 @@
                 .float-right {
                     margin: 0 0 120px 20px;
                 }
+            }
+        }
+        @media @ipad-v {
+            .story {
+                margin: 0 0 0 auto;
+                width: 55%;
+                padding: 60px 40px 60px 0;
+            }
+            .float-right {
+                margin: 0;
+            }
+        }
+        @media @ipad-h {
+            .story {
+                margin: 0 0 0 auto;
+                width: 55%;
+                padding: 60px 40px 60px 0;
+            }
+            .float-right {
+                margin: 0;
             }
         }
     }
