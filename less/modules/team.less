@@ -1,0 +1,150 @@
+#team {
+    #intro {
+        background: url(../img/m-bryceBG.jpg) 0 0 no-repeat;
+        background-size: cover;
+        margin: 0;
+        padding: 120px 0 0 0;
+        border-bottom: 1px solid #fff;
+        .story {
+            padding: 60px 60px 100px 0;
+        }
+        h2 {
+            // opacity: .8;
+            color: #ddd;
+            // text-shadow: 1px 1px 0 #000;
+            @media @ipad-h {
+                color: #fff;
+                margin-bottom: 40px;
+                text-shadow: none;
+            }
+        }
+        h3, p {
+            padding: 10px 20px;
+            margin: 0;
+            background-color: rgba(0,0,0,0.6);
+            // opacity: .6;
+            color: #fff;
+        }
+        
+        @media @mobi-v {
+            background: url(../img/mobi-v-bryceBG.jpg) 0 0 no-repeat;
+            background-size: cover;
+            // height: 600px;
+            .story {
+                // width: 320px;
+            }
+            h2 {
+                padding: 10px 20px;
+                margin-bottom: 20px;
+                opacity: .8;
+                color: #ddd;
+            }
+        }
+        @media @ipad-v {
+            background-position: center right;
+            .story {
+                width: 60%;
+                margin: 0;
+                padding: 10px 10px 100px 40px;
+            }
+        }
+    }
+
+    #second {
+        background: url(../img/mobi-v-markBG.jpg) center 0 no-repeat;
+        // height: 768px;
+        margin: 0;
+        padding: 60px 0 60px;
+        border-bottom: 1px solid #fff;
+        h3,
+        p {
+            padding: 10px 20px;
+            margin: 0;
+            background-color: #000;
+            opacity: .6;
+            color: #fff;
+        }
+        @media @mobi-v {
+            // height: 1100px;
+            padding: 320px 0 160px; 
+            .story {
+                padding: 0 20px;
+            }
+            p {
+                margin-bottom: 10px;
+            }
+        }
+        @media @ipad-v {
+            background: url(../img/m-markBG.jpg) center 0 no-repeat;
+            .story {
+                margin: 0;
+                width: 60%;
+            }
+        }
+        @media @ipad-h {
+            background: url(../img/m-markBG.jpg) center 0 no-repeat;
+            .story {
+                margin: 0;
+                width: 60%;
+            }
+        }
+    }
+
+    #third {
+        background: url(../img/mobi-v-timBG-new2.jpg) center 0 no-repeat;
+        // height: 768px;
+        margin: 0;
+        padding: 1px 0;
+        @media @ipad-h {
+            background: url(../img/m-timBG-new.jpg) no-repeat;
+        }
+        @media @ipad-v {
+            background: url(../img/m-timBG-new.jpg) -100px bottom no-repeat;
+            // height: 850px;
+        }
+        h3,
+        p {
+            padding: 10px 20px;
+            margin: 0;
+            background-color: #000;
+            opacity: .6;
+            color: #fff;
+        }
+        @media @mobi-v {
+            // height: 1500px;
+            .story {
+                padding: 460px 0 0;
+                .float-right {
+                    margin: 0 0 120px 20px;
+                }
+            }
+        }
+        @media @ipad-v {
+            .story {
+                margin: 0 0 0 auto;
+                width: 55%;
+                padding: 60px 40px 60px 0;
+            }
+            .float-right {
+                margin: 0;
+            }
+        }
+        @media @ipad-h {
+            .story {
+                margin: 0 0 0 auto;
+                width: 55%;
+                padding: 60px 40px 60px 0;
+            }
+            .float-right {
+                margin: 0;
+            }
+        }
+    }
+    #intro,
+    #second,
+    #third {
+        @media @mobi-v {
+            background-size: cover;
+        }
+    }
+}

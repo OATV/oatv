@@ -1,0 +1,64 @@
+@font-face {
+    font-family: Oswald;
+    src: url('../fonts/oswald-webfont.eot?') format('eot'), url('../fonts/oswald-webfont.woff') format('woff'), url('../fonts/oswald-webfont.ttf') format('truetype'), url('../fonts/oswald-webfont.svg#svgFontName') format('svg');
+}
+
+@font-face {
+    font-family: Arvo;
+    src: url('../fonts/arvo-regular-webfont.eot?') format('eot'), url('../fonts/arvo-regular-webfont.woff') format('woff'), url('../fonts/arvo-regular-webfont.ttf') format('truetype'), url('../fonts/arvo-regular-webfont.svg#svgFontName') format('svg');
+}
+
+a {
+    color: #c00;
+}
+
+p {
+    margin: 0 0 16px 0;
+    font: 14px/20px Arvo, MuseoSlab-500, Helvetica, Arial, sans-serif;
+    color: #000;
+    @media @mobi-v {
+        margin: 0 0 12px 0;
+        font: 12px/18px Arvo, MuseoSlab-500, Helvetica, Arial, sans-serif;
+    }
+}
+
+p, ul {
+    font-family: Arvo, MuseoSlab-500, Helvetica, Arial, sans-serif;
+    font-size-adjust: 0.488;
+}
+
+h1 {
+    font: normal 48px/42px Arvo, MuseoSlab-500, AlternateGothicFSNo2, Georgia, serif;
+    text-transform: uppercase;
+    @media @mobi-v {
+        font: 600 28px/26px Arvo, MuseoSlab-500, AlternateGothicFSNo2, Georgia, serif;
+    }
+}
+
+h2 {
+    font-family: AlternateGothicFSNo2, Georgia, sans-serif;
+    font: 400 100px/90px Oswald, AlternateGothicFSNo2, "Arial Narrow", serif; 
+    font-size-adjust:0.531; 
+    font-style:normal; 
+    //opacity: .6; 
+    padding: 0; 
+    margin: 0 0 20px; 
+    letter-spacing: -4px; 
+    text-transform: uppercase; 
+    color: #000;
+    @media @mobi-v {
+        font: 600 40px/36px Oswald, AlternateGothicFSNo2, "Arial Narrow", serif;
+        letter-spacing: -1px;
+        opacity: 1;
+    }
+}
+
+h3 {
+    font: 40px/48px Arvo, MuseoSlab-500, Georgia, serif;
+    letter-spacing: -.03em;
+    padding: 0;
+    margin: 0 0 20px;
+    @media @mobi-v {
+        font: 20px/20px Arvo, MuseoSlab-500, Georgia, serif;
+    }
+}

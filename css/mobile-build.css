@@ -1,0 +1,601 @@
+@char @charset "utf-8";
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  0width: 960px;
+  padding: 0;
+}
+@media all and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  width: 320px;
+}
+.pad-40 {
+  padding-left: 40px;
+}
+@media all and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  .pad-40 {
+    padding-left: 10px;
+  }
+}
+img {
+  border: 0;
+}
+.float-left {
+  float: left;
+}
+@media all and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  .float-left {
+    margin: 0;
+  }
+}
+.float-right {
+  float: left;
+  margin: 0 0 0 240px;
+}
+@media all and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  .float-right {
+    margin: 0 0 0 20px;
+  }
+}
+#nav {
+  list-style: none;
+  position: fixed;
+  right: 20px;
+}
+#nav li {
+  margin: 0 0 15px 0;
+}
+#header {
+  width: 100%;
+  background: #ffffff;
+  height: 100px;
+  position: fixed;
+  clear: both;
+  z-index: 999;
+  -moz-box-shadow: inset 0 0 12px #cccccc;
+  -webkit-box-shadow: inset 0 0 12px #cccccc;
+  box-shadow: inset 0 0 x 12px #cccccc;
+}
+#intro {
+  width: 100%;
+  background: url(../img/m-firstBG.jpg) no-repeat;
+  background-size: cover;
+  height: auto;
+  margin: 0;
+  padding: 100px 0;
+}
+@media all and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  #intro {
+    padding: 160px 0;
+    background: url(../img/mobi-v-firstBG.jpg) 0 no-repeat;
+    background-size: 150%;
+  }
+}
+#wrapper {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+@media all and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  #wrapper {
+    width: 100%;
+  }
+}
+#second {
+  width: 100%;
+  background-size: cover;
+  height: auto;
+  margin: 0;
+  padding: 60px 0;
+}
+@media all and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  #second ul {
+    padding-left: 20px;
+  }
+}
+#third {
+  background: url(../img/m-thirdBG.jpg) center center no-repeat;
+  background-size: cover;
+  margin: 0;
+  padding: 120px 0;
+  height: auto;
+}
+#third h3 {
+  color: #ffffff;
+}
+#third p {
+  color: #ffffff;
+}
+@media all and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  #third {
+    background: url(../img/mobi-v-thirdBG.jpg) center center no-repeat;
+    background-size: cover;
+  }
+  #third p {
+    text-shadow: 0 1px 0 #000;
+  }
+}
+#fourth {
+  background: url(../img/m-fourthBG.jpg) no-repeat;
+  background-size: cover;
+  margin: 0;
+  padding: 60px 0;
+}
+@media all and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  #fourth {
+    background-image: url(../img/mobi-v-fourthBG.jpg);
+  }
+}
+#fifth {
+  background: url(../img/m-fifthBG.jpg) -180px 0 no-repeat;
+  background-size: cover;
+  margin: 0;
+  padding: 60px 0;
+}
+@media all and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  #fifth {
+    background: url(../img/m-fifthBG.jpg) bottom right no-repeat;
+    background-size: 100%;
+    padding: 60px 0 140px;
+  }
+  #fifth .story {
+    padding-right: 80px;
+  }
+}
+@media all and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
+  #who-we-are .story {
+    padding-top: 80px;
+    padding-bottom: 100px;
+  }
+  #who-we-are .story .float-left {
+    width: 75%;
+  }
+}
+@media all and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+  #who-we-are .story {
+    padding-top: 80px;
+  }
+  #who-we-are .story .float-left {
+    width: 75%;
+  }
+}
+@media all and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
+  #who-we-are #fifth {
+    background-size: 75%;
+    background-position: bottom right;
+  }
+  #who-we-are #fifth .story {
+    padding-bottom: 60px;
+  }
+  #who-we-are #fifth .float-left {
+    width: 60%;
+  }
+}
+.story {
+  margin: 0 auto;
+  padding: 0 40px;
+}
+@media all and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  .story {
+    padding: 0 20px;
+  }
+}
+.story .float-left,
+.story .float-right {
+  float: none;
+}
+@font-face {
+  font-family: Oswald;
+  src: url('../fonts/oswald-webfont.eot?') format('eot'), url('../fonts/oswald-webfont.woff') format('woff'), url('../fonts/oswald-webfont.ttf') format('truetype'), url('../fonts/oswald-webfont.svg#svgFontName') format('svg');
+}
+@font-face {
+  font-family: Arvo;
+  src: url('../fonts/arvo-regular-webfont.eot?') format('eot'), url('../fonts/arvo-regular-webfont.woff') format('woff'), url('../fonts/arvo-regular-webfont.ttf') format('truetype'), url('../fonts/arvo-regular-webfont.svg#svgFontName') format('svg');
+}
+a {
+  color: #c00;
+}
+p {
+  margin: 0 0 16px 0;
+  font: 14px/20px Arvo, MuseoSlab-500, Helvetica, Arial, sans-serif;
+  color: #000;
+}
+@media all and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  p {
+    margin: 0 0 12px 0;
+    font: 12px/18px Arvo, MuseoSlab-500, Helvetica, Arial, sans-serif;
+  }
+}
+p,
+ul {
+  font-family: Arvo, MuseoSlab-500, Helvetica, Arial, sans-serif;
+  font-size-adjust: 0.488;
+}
+h1 {
+  font: normal 48px/42px Arvo, MuseoSlab-500, AlternateGothicFSNo2, Georgia, serif;
+  text-transform: uppercase;
+}
+@media all and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  h1 {
+    font: 600 28px/26px Arvo, MuseoSlab-500, AlternateGothicFSNo2, Georgia, serif;
+  }
+}
+h2 {
+  font-family: AlternateGothicFSNo2, Georgia, sans-serif;
+  font: 400 100px/90px Oswald, AlternateGothicFSNo2, "Arial Narrow", serif;
+  font-size-adjust: 0.531;
+  font-style: normal;
+  padding: 0;
+  margin: 0 0 20px;
+  letter-spacing: -4px;
+  text-transform: uppercase;
+  color: #000;
+}
+@media all and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  h2 {
+    font: 600 40px/36px Oswald, AlternateGothicFSNo2, "Arial Narrow", serif;
+    letter-spacing: -1px;
+    opacity: 1;
+  }
+}
+h3 {
+  font: 40px/48px Arvo, MuseoSlab-500, Georgia, serif;
+  letter-spacing: -0.03em;
+  padding: 0;
+  margin: 0 0 20px;
+}
+@media all and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  h3 {
+    font: 20px/20px Arvo, MuseoSlab-500, Georgia, serif;
+  }
+}
+menu,
+menu li {
+  float: left;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+#header menu li a {
+  color: #bbcccc;
+  display: block;
+  text-decoration: none;
+  word-wrap: break-word;
+  width: 120px;
+  height: 100px;
+  padding: 10px 0 10px 10px;
+  letter-spacing: 1px;
+  font: 400 34px/34px Oswald, "Arial Narrow", sans-serif;
+  text-transform: uppercase;
+  float: left;
+  border-right: 1px solid #cccccc;
+}
+#header menu li a.select {
+  color: #444;
+  background: #eee;
+}
+@media all and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  #header menu li a {
+    width: 70px;
+    height: 100px;
+    padding: 20px 0 10px 10px;
+    letter-spacing: 1px;
+    border-left: 1px solid #eee;
+    border-right: none;
+    font: 400 20px/18px Oswald, "Arial Narrow", sans-serif;
+  }
+}
+#header .small {
+  font: 400 20px/20px Oswald, AlternateGothicFSNo2, "Arial Narrow", sans-serif;
+  display: block;
+  height: 20px;
+}
+@media all and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  #header .small {
+    font: 400 11px/10px Oswald, AlternateGothicFSNo2, "Arial Narrow", sans-serif;
+    display: block;
+    height: 12px;
+    letter-spacing: normal;
+  }
+}
+#footer {
+  border: 1px solid #eeeeee;
+  height: 120px;
+  background: #ffffff url(../img/oatv-logo.png) 0 12px no-repeat;
+  -webkit-box-shadow: inset 0 0 12px #cccccc;
+}
+@media all and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  #footer {
+    background: #fff url(../img/mobi-oatv-logo.png) 0 12px no-repeat;
+    height: 100px;
+  }
+}
+#footer p {
+  font: 11px/14px Arial, sans-serif;
+  color: #444444;
+  padding: 36px 0 0 200px;
+}
+@media all and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  #footer p {
+    font: 10px/12px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding: 15px 0 0 120px;
+  }
+}
+#footer strong {
+  color: #000000;
+}
+#portfolio #content {
+  background: url(../img/m-portfolioBG.jpg) no-repeat;
+  background-size: 300%;
+  background-position: center -250px;
+  padding: 100px 20px;
+  height: auto;
+  overflow: hidden;
+}
+@media all and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  #portfolio #content {
+    padding: 100px 0 30px 0;
+    background-image: url(../img/mobi-v-portfolioBG.jpg);
+    background-position: 0 -50px;
+  }
+}
+@media all and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+  #portfolio #content {
+    background-size: 250%;
+  }
+}
+#portfolio #content h2 {
+  margin: 30px 0 0 30px;
+  color: #000000;
+  opacity: .6;
+  filter: alpha(opacity=60);
+}
+#portfolio #content ul {
+  padding: 0 20px;
+  height: auto;
+  overflow: hidden;
+  float: left;
+  list-style-type: none;
+}
+@media all and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  #portfolio #content ul {
+    padding: 0 20px 150px 20px;
+  }
+}
+#portfolio #content ul li {
+  float: left;
+  list-style-type: none;
+}
+#portfolio #content li {
+  cursor: pointer;
+  padding: 2px;
+  width: 33.3333%;
+}
+@media all and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  #portfolio #content li {
+    width: 50%;
+  }
+}
+#portfolio #content li > div {
+  height: 80px;
+  opacity: .6;
+  filter: alpha(opacity=60);
+  background: #ffffff;
+  -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+}
+#portfolio #content li.active {
+  width: 100%;
+}
+#portfolio #content li.active > div {
+  height: 184px;
+}
+@media all and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  #portfolio #content li.active {
+    width: 100%;
+  }
+  #portfolio #content li.active > div {
+    height: auto;
+    opacity: 1;
+  }
+}
+#portfolio #content li.active p.hidden {
+  display: block;
+}
+#portfolio #content li.inactive {
+  background-color: #cccccc;
+}
+@media all and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  #portfolio #content li.inactive {
+    background: url(../img/diag-tile.gif) repeat;
+  }
+}
+#portfolio #content li p {
+  font: 11px/14px Arvo, MuseoSlab-500, Helvetica, Arial, sans-serif;
+  padding: 0;
+  margin-bottom: 6px;
+  color: #000000;
+}
+@media all and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  #portfolio #content li p {
+    font-size: 14px;
+    line-height: 20px;
+    padding: 0 10px 20px 0;
+  }
+}
+#portfolio #content li p.hidden {
+  display: none;
+}
+#portfolio #content h3 {
+  font: 400 14px/14px Oswald, "Arial Narrow", serif;
+  margin-bottom: 12px;
+  letter-spacing: .02em;
+  text-transform: uppercase;
+  color: #000000;
+}
+#team #intro {
+  background: url(../img/m-bryceBG.jpg) 0 0 no-repeat;
+  background-size: cover;
+  margin: 0;
+  padding: 120px 0 0 0;
+  border-bottom: 1px solid #fff;
+}
+#team #intro .story {
+  padding: 60px 60px 100px 0;
+}
+#team #intro h2 {
+  color: #ddd;
+}
+@media all and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+  #team #intro h2 {
+    color: #fff;
+    margin-bottom: 40px;
+    text-shadow: none;
+  }
+}
+#team #intro h3,
+#team #intro p {
+  padding: 10px 20px;
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+}
+@media all and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  #team #intro {
+    background: url(../img/mobi-v-bryceBG.jpg) 0 0 no-repeat;
+    background-size: cover;
+  }
+  #team #intro h2 {
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    opacity: .8;
+    color: #ddd;
+  }
+}
+@media all and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
+  #team #intro {
+    background-position: center right;
+  }
+  #team #intro .story {
+    width: 60%;
+    margin: 0;
+    padding: 10px 10px 100px 40px;
+  }
+}
+#team #second {
+  background: url(../img/mobi-v-markBG.jpg) center 0 no-repeat;
+  margin: 0;
+  padding: 60px 0 60px;
+  border-bottom: 1px solid #fff;
+}
+#team #second h3,
+#team #second p {
+  padding: 10px 20px;
+  margin: 0;
+  background-color: #000;
+  opacity: .6;
+  color: #fff;
+}
+@media all and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  #team #second {
+    padding: 320px 0 160px;
+  }
+  #team #second .story {
+    padding: 0 20px;
+  }
+  #team #second p {
+    margin-bottom: 10px;
+  }
+}
+@media all and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
+  #team #second {
+    background: url(../img/m-markBG.jpg) center 0 no-repeat;
+  }
+  #team #second .story {
+    margin: 0;
+    width: 60%;
+  }
+}
+@media all and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+  #team #second {
+    background: url(../img/m-markBG.jpg) center 0 no-repeat;
+  }
+  #team #second .story {
+    margin: 0;
+    width: 60%;
+  }
+}
+#team #third {
+  background: url(../img/mobi-v-timBG-new2.jpg) center 0 no-repeat;
+  margin: 0;
+  padding: 1px 0;
+}
+@media all and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+  #team #third {
+    background: url(../img/m-timBG-new.jpg) no-repeat;
+  }
+}
+@media all and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
+  #team #third {
+    background: url(../img/m-timBG-new.jpg) -100px bottom no-repeat;
+  }
+}
+#team #third h3,
+#team #third p {
+  padding: 10px 20px;
+  margin: 0;
+  background-color: #000;
+  opacity: .6;
+  color: #fff;
+}
+@media all and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  #team #third .story {
+    padding: 460px 0 0;
+  }
+  #team #third .story .float-right {
+    margin: 0 0 120px 20px;
+  }
+}
+@media all and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
+  #team #third .story {
+    margin: 0 0 0 auto;
+    width: 55%;
+    padding: 60px 40px 60px 0;
+  }
+  #team #third .float-right {
+    margin: 0;
+  }
+}
+@media all and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+  #team #third .story {
+    margin: 0 0 0 auto;
+    width: 55%;
+    padding: 60px 40px 60px 0;
+  }
+  #team #third .float-right {
+    margin: 0;
+  }
+}
+@media all and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  #team #intro,
+  #team #second,
+  #team #third {
+    background-size: cover;
+  }
+}
+#not #intro .story {
+  padding-top: 80px;
+}
+#not #intro h2 {
+  margin-bottom: 30px;
+}
+#not #intro p {
+  margin-bottom: 30px;
+}

@@ -1,0 +1,174 @@
+@import 'variables.less';
+* {
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+}
+body {
+  margin:0;
+  0width:960px;
+  padding:0;
+}
+@media @mobi-v {
+    width: 320px;
+}
+.pad-40 {
+  padding-left:40px;
+  @media @mobi-v {
+    padding-left: 10px;
+  }
+}
+img {
+  border:0;
+}
+.float-left {
+  float:left;
+  @media @mobi-v {
+    margin: 0;
+  }
+}
+.float-right {
+  float:left;
+  margin:0 0 0 240px;
+  @media @mobi-v {
+    margin: 0 0 0 20px;
+  }
+}
+#nav {
+  list-style:none;
+  position:fixed;
+  right:20px;
+  li {
+    margin:0 0 15px 0;
+  }
+}
+#header {
+  width:100%;
+  background:#ffffff;
+  height:100px;
+  position:fixed;
+  clear:both;
+  z-index:999;
+  -moz-box-shadow:inset 0 0 12px #cccccc;
+  -webkit-box-shadow:inset 0 0 12px #cccccc;
+  box-shadow:inset 0 0 x 12px #cccccc;
+}
+#intro {
+  width:100%;
+  background:url(../img/m-firstBG.jpg) no-repeat;
+  background-size: cover;
+  height:auto;
+  margin:0;
+  padding:100px 0;
+  @media @mobi-v {
+    padding: 160px 0;
+    background: url(../img/mobi-v-firstBG.jpg) 0 no-repeat;
+    background-size: 150%;
+  }
+}
+#wrapper {
+  width:100%;
+  height:auto;
+  overflow:hidden;
+  @media @mobi-v {
+    width: 100%;
+  }
+}
+#second {
+  width:100%;
+  // background:url(../img/m-secondBG.gif) -100px 0 no-repeat;
+  background-size: cover;
+  height:auto;
+  margin:0;
+  padding:60px 0;
+  @media @mobi-v {
+    ul {
+      padding-left: 20px;
+    }
+  }
+}
+
+#third {
+  background:url(../img/m-thirdBG.jpg) center center no-repeat;
+  background-size: cover;
+  margin:0;
+  padding:120px 0;
+  height: auto;
+  h3 {
+    color:#ffffff;
+  }
+  p {
+    color:#ffffff;
+  }
+  @media @mobi-v {
+    background: url(../img/mobi-v-thirdBG.jpg) center center no-repeat;
+    background-size: cover;
+    p {
+        text-shadow: 0 1px 0 #000;
+    }
+  }
+}
+#fourth {
+  background:url(../img/m-fourthBG.jpg) no-repeat;
+  background-size: cover;
+  margin:0;
+  padding: 60px 0;
+  @media @mobi-v {
+    background-image: url(../img/mobi-v-fourthBG.jpg);
+  }
+}
+#fifth {
+  background:url(../img/m-fifthBG.jpg) -180px 0 no-repeat;
+  background-size: cover;
+  margin:0;
+  padding: 60px 0;
+  @media @mobi-v {
+    background: url(../img/m-fifthBG.jpg) bottom right no-repeat;
+    background-size: 100%;
+    padding: 60px 0 140px;
+    .story {
+      padding-right: 80px;
+    }
+  }
+}
+#who-we-are {
+  .story {
+    @media @ipad-v {
+      padding-top: 80px;
+      padding-bottom: 100px;
+      .float-left {
+        width: 75%;
+      }
+    }
+    @media @ipad-h {
+      padding-top: 80px;
+      .float-left {
+        width: 75%;
+      }
+    }
+  }
+  
+  @media @ipad-v {
+    #fifth {
+      background-size: 75%;
+      background-position: bottom right;
+      .story {
+        padding-bottom: 60px;
+      }
+      .float-left {
+        width: 60%;
+      }
+    }
+  }
+}
+.story {
+  margin:0 auto;
+  padding: 0 40px;
+  @media @mobi-v {
+    padding: 0 20px;
+  }
+  .float-left, .float-right {
+    float: none;
+  }
+}

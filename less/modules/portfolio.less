@@ -1,0 +1,99 @@
+#portfolio {
+    #content {
+        background: url(../img/m-portfolioBG.jpg) no-repeat;
+        background-size: 300%;
+        background-position: center -250px;
+        padding: 100px 20px;
+        height: auto;
+        overflow: hidden;
+        @media @mobi-v {
+            padding: 100px 0 30px 0;
+            background-image: url(../img/mobi-v-portfolioBG.jpg);
+            background-position: 0 -50px;
+        }
+        @media @ipad-h {
+            background-size: 250%;
+        }
+        h2 {
+            margin: 30px 0 0 30px;
+            color: #000000;
+            opacity: .6;
+            filter: alpha(opacity=60);
+        }
+        ul {
+            padding: 0 20px;
+            height: auto;
+            overflow: hidden;
+            float: left;
+            list-style-type: none;
+            @media @mobi-v {
+                padding: 0 20px 150px 20px;
+            }
+            li {
+                float: left;
+                list-style-type: none;
+            }
+        }
+        li {
+            cursor: pointer;
+            padding: 2px;
+            width: 33.3333%;
+            @media @mobi-v {
+                width: 50%;
+            }
+            > div {
+                height: 80px;
+                opacity: .6;
+                filter: alpha(opacity=60);
+                background: #ffffff;
+                -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+                -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+                box-shadow: 0 0 5px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+                padding: 10px;
+            }
+            &.active {
+                width: 100%;
+                > div {
+                    height: 184px;
+                }
+                @media @mobi-v {
+                    width: 100%;
+                    > div {
+                        height: auto;
+                        opacity: 1;
+                    }
+                }
+                p.hidden {
+                    display: block;
+                }
+            }
+            &.inactive {
+                background-color: #cccccc;
+                @media @mobi-v {
+                    background: url(../img/diag-tile.gif) repeat;
+                }
+            }
+            p {
+                font: 11px/14px Arvo, MuseoSlab-500, Helvetica, Arial, sans-serif;
+                padding: 0;
+                margin-bottom: 6px;
+                color: #000000;
+                @media @mobi-v {
+                    font-size: 14px;
+                    line-height: 20px;
+                    padding: 0 10px 20px 0;
+                }
+            }
+            p.hidden {
+                display: none;
+            }
+        }
+        h3 {
+            font: 400 14px/14px Oswald, "Arial Narrow", serif;
+            margin-bottom: 12px;
+            letter-spacing: .02em;
+            text-transform: uppercase;
+            color: #000000;
+        }
+    }
+}
