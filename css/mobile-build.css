@@ -341,7 +341,8 @@ menu li {
   #portfolio #content {
     padding: 100px 0 30px 0;
     background-image: url(../img/mobi-v-portfolioBG.jpg);
-    background-position: 0 -50px;
+    background-position: 0 0;
+    background-size: cover;
   }
 }
 @media all and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {

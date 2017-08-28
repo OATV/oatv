@@ -30,7 +30,7 @@ a { color: #c00; }
 .center { text-align: center; margin: 0 auto; }
 .logo { margin-top: 0; }
 .navlink { margin-top: 150px; font: 16px/20px "Gill Sans", Futura, Helvetica, Arial, sans-serif; letter-spacing: .9em; color: #333; text-transform: uppercase; text-shadow: 1px 1px 0 #fff; }
-.navlink a { color: #222; text-decoration: none; }
+.navlink a { color: #222; text-decoration: none; margin-right: -10px; }
 .navlink a:hover { color: #c00; }
 .leftlink { padding: 0 40px 0 70px; border-right: 1px dotted #666; }
 .rightlink { padding-left: 40px; }
