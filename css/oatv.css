@@ -116,6 +116,20 @@ h3 { font: 40px/36px Arvo, Georgia, serif; letter-spacing: -.03em; padding: 0; m
 #header, #intro, #second{
 	width: 100%;
 }
+#intro p {
+	font-size: 16px;
+	line-height: 26px;
+}
+#intro a {
+	color: #bcd05d;
+}
+#intro a:active {
+	color: #fff;
+}
+
+#intro a:visited {
+	color: #b4c173;
+}
 
 #header{
 	background: #fff;
@@ -196,7 +210,7 @@ h3 { font: 40px/36px Arvo, Georgia, serif; letter-spacing: -.03em; padding: 0; m
 #who p strong { font-weight: bold; text-transform: uppercase; }
 
 #who .story .float-left, #who .story .float-right, #team .story .float-left,  #team .story .float-right { width: 450px; padding-top: 40px; }
-#who #intro { background: url(../img/stage.jpg) 50% 0 no-repeat fixed; height: 1000px; }
+#who #intro { background: url(../img/stage.jpg) 50% 0 no-repeat fixed; }
 #who #intro h3 { margin: 20px 0; color: #000; }
 #who #intro p { color: #000; }
 
