@@ -1,23 +1,70 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<title>OATV: O'Reilly AlphaTech Ventures</title>
-	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-	<link rel="stylesheet" type="text/css" media="screen" href="css/oatv.css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<!-- Mobile viewport optimized: j.mp/bplateviewport -->
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>OATV</title>
+
+<link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
+<link rel="stylesheet" type="text/css" media="screen" href="css/oatv.css">
+<link href='http://fonts.googleapis.com/css?family=Oswald|Arvo:400,700' rel='stylesheet' type='text/css'>
+
+<script type="text/javascript"> // <![CDATA[
+	if ((navigator.userAgent.indexOf('iPhone') != -1) || (navigator.userAgent.indexOf('iPod') != -1) || (navigator.userAgent.indexOf('iPad') != -1)) {
+		document.location = "m/";
+	} // ]]>
+</script>
+
+<!-- test comment -->
+
 </head>
-<body>
-		<div id="logo"></div>
-			<div id="wrapper">
-			
-				<div class="center">
-					<img class="logo" src="img/oatv-logo.png" alt="oatv" />
-					<p class="navlink"><a href="are.html" >Who We Are</a>
-				</div>
-				
+
+<body id="who">
 
 
-			</div><!-- end wrapper -->
+
+<div id="header">
+
+
+		<menu class="pad-40">
+			<li><a href="are.html" class="select"><span class="small">About</span> Us</a></li>
+			<li><a href="portfolio.html"><span class="small">Port-</span>folio</a></li>
+			<li><a href="team.html"><span class="small">Our</span>Team</a></li>
+		</menu>
+
+</div> <!--#header-->
+
+<div id="intro">
+	<div class="story">
+    	<div class="float-left">
+			<p>OATV is an early stage investment firm founded by <a href="team.html#second">Mark Jacobsen</a>, <a href="team.html#third">Tim O’Reilly</a> and <a href="team.html#intro">Bryce Roberts</a>. In 2005 we pioneered the category which has come to be known as institutional seed investing. In 2015 we began work on a new investment category we call <a href="http://indie.vc">Indie.vc</a>, which is designed to support founders with a focus on customers, revenue and profitability.</p>
+	</div>
+    </div> <!--.story-->
+</div> <!--#intro-->
+
+<div id="footer">
+	<p>	<strong>O'Reilly AlphaTech Ventures</strong>
+	</p>
+</div>
+
+
+<!-- JavaScript at the bottom for fast page loading -->
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+<script type="text/javascript" src="scripts/nbw-parallax.js"></script>
+<script type="text/javascript" src="scripts/jquery.localscroll-1.2.7-min.js"></script>
+<script type="text/javascript" src="scripts/jquery.scrollTo-1.4.2-min.js"></script>
+<script type="text/javascript" src="scripts/jquery.inview.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$('#nav').localScroll();
+    $('body#who').addClass('loaded');
+})
+</script>
 
 </body>
 </html>
