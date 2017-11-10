@@ -1,22 +1,30 @@
 #footer {
   border:1px solid #eeeeee;
   height:120px;
-  background:#ffffff url(../img/oatv-logo.png) 0 12px no-repeat;
+  background:#ffffff url(../img/oatv-logo.png) 0 21px no-repeat;
   -webkit-box-shadow:inset 0 0 12px #cccccc;
   @media @mobi-v {
-    background: #fff url(../img/mobi-oatv-logo.png) 0 12px no-repeat;
+    background: #fff url(../img/mobi-oatv-logo.png) 0 21px no-repeat;
     height: 100px;
   }
   p {
-    font:11px/14px Arial, sans-serif;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 11px;
     color:#444444;
-    padding:36px 0 0 200px;
+    padding:0 0 0 200px;
+    line-height: 120px;
     @media @mobi-v {
-        font: 10px/12px "Helvetica Neue", Helvetica, Arial, sans-serif;
-        padding: 15px 0 0 120px;
+        font-size: 10px;
+        padding: 0 0 0 120px;
+        line-height: 100px;
     }
   }
   strong {
     color:#000000;
   }
+}
+#who-we-are #footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
 }

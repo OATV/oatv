@@ -77,10 +77,10 @@ $(document).ready(function() { //when the document is ready...
 		//if the first section is in view...
 		if($firstBG.hasClass("inview")){
 			//call the newPos function and change the background position
-			$firstBG.css({'backgroundPosition': newPos(0, windowHeight, pos, 900, 0.3)}); 
+			$firstBG.css({'backgroundPosition': newPos(0, windowHeight, pos, 1200, 0.2)}); 
 			
-			$notFirstBG.css({'backgroundPosition': newPos(50, windowHeight, pos, 1580, 0.8)}); 
-			$a.css({'backgroundPosition': newPos(50, windowHeight, pos, 1568, 0.5)});
+			$notFirstBG.css({'backgroundPosition': newPos(20, windowHeight, pos, 1200, 0.5)}); 
+			$a.css({'backgroundPosition': newPos(50, windowHeight, pos, 1568, 0.3)});
 			$t.css({'backgroundPosition': newPos(50, windowHeight, pos, 1400, 0.1)});
 			$v.css({'backgroundPosition': newPos(50, windowHeight, pos, 1546, 0.3)});
 			
@@ -95,8 +95,8 @@ $(document).ready(function() { //when the document is ready...
 			$secondBG.css({'backgroundPosition': newPos(50, windowHeight, pos, 1250, 0.3)});
 			//call the newPos function and change the second background position
 			//_tarsier.css({'backgroundPosition': newPos(20, windowHeight, pos, 1100, 0.6)});
-			$jumper.css({'backgroundPosition': newPos(50, windowHeight, pos, 2200, 0.9)});
-			$teamSecondBG.css({'backgroundPosition': newPos(50, windowHeight, pos, 2000, 0.6)});
+			$jumper.css({'backgroundPosition': newPos(50, windowHeight, pos, 2200, 0.3)});
+			$teamSecondBG.css({'backgroundPosition': newPos(0, windowHeight, pos, 2300, 0.4)});
 		}
 		
 		//if the third section is in view...
