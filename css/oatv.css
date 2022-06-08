@@ -353,7 +353,7 @@ h3 {
     font-size-adjust: 0.531; //re-calculate adjustment }
     #who p strong {
         font-weight: bold;
-        
+
     }
      #who .story .float-right, #team .story .float-left, #team .story .float-right {
         width: 500px;
@@ -475,9 +475,9 @@ h3 {
     #team #second .float-left h3 {
     	padding-top: 0;
     }
-    #team #second h3, 
+    #team #second h3,
     #team #second p,
-    #team #third h3, 
+    #team #third h3,
     #team #third p {
         color: #fff;
     }
@@ -543,10 +543,14 @@ h3 {
         width: 125px;
         height: 80px;
         background: #dcdcdc;
+        color: #333;
         -webkit-box-shadow: none;
         -moz-box-shadow: none;
         box-shadow: none;
 		transition: all 0.2s linear;
+        letter-spacing: .02em;
+        text-transform: uppercase;
+        font: 400 14px/14px "Gill Sans", Futura, Helvetica, Arial, sans-serif;
     }
     #portfolio #content li a {
     	padding: 10px;
@@ -554,11 +558,7 @@ h3 {
         height: 80px;
         display: block;
         color: #333;
-        font: 400 14px/14px "Gill Sans", Futura, Helvetica, Arial, sans-serif;
         margin-bottom: 12px;
-        letter-spacing: .02em;
-        text-transform: uppercase;
-        color: #333;
         text-decoration: none;
         margin: -10px;
     }
